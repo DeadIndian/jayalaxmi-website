@@ -64,20 +64,27 @@
 				letter-spacing: -1px;
 			}
 			.nav-title {
-				font-family: "Oswald", sans-serif;
-				font-weight: 600;
-				color: var(--white);
-				font-size: 17px;
+				font-family: "Samarkan", sans-serif;
+				font-weight: normal;
+				color: var(--red);
+				font-size: 24px;
 				line-height: 1.2;
-				letter-spacing: 0.5px;
+				letter-spacing: 1px;
+				text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 			}
 			.nav-title span {
-				display: block;
-				font-size: 10px;
-				font-weight: 300;
-				letter-spacing: 1.5px;
-				opacity: 0.85;
+				display: inline-block;
+				font-size: 9px;
+				font-family: "Oswald", sans-serif;
+				font-weight: 600;
+				letter-spacing: 0.5px;
 				text-transform: uppercase;
+				background: var(--blue);
+				color: var(--white);
+				padding: 2px 8px;
+				border-radius: 12px;
+				margin-top: 4px;
+				border: 1px solid rgba(255,255,255,0.3);
 			}
 			.nav-links {
 				display: flex;
@@ -221,26 +228,32 @@
 			}
 
 			.hero h1 {
-				font-family: "Oswald", sans-serif;
-				font-weight: 700;
+				font-family: "Oswald",sans-serif;
+				font-weight: normal;
 				font-size: clamp(32px, 7vw, 64px);
-				color: var(--white);
+				color: var(--red);
 				line-height: 1.1;
 				position: relative;
 				margin-bottom: 10px;
+				text-shadow: 2px 2px 4px rgba(255,255,255,0.7);
 			}
 			.hero h1 em {
-				color: var(--orange);
+				color: var(--red);
 				font-style: normal;
 			}
 			.hero-sub {
-				font-size: clamp(13px, 2.5vw, 17px);
-				color: rgba(255, 255, 255, 0.75);
-				letter-spacing: 2px;
+				font-family: "Oswald", sans-serif;
+				font-size: clamp(11px, 2vw, 16px);
+				color: var(--white);
+				background: var(--blue);
+				padding: 6px 16px;
+				border-radius: 20px;
+				letter-spacing: 1px;
 				text-transform: uppercase;
-				font-weight: 300;
+				font-weight: 600;
 				margin-bottom: 32px;
 				position: relative;
+				border: 1px solid rgba(255,255,255,0.4);
 			}
 			.hero-tagline {
 				font-size: clamp(15px, 2.5vw, 20px);
@@ -639,19 +652,13 @@
 			}
 			.modal-img-side {
 				background: var(--light);
-				padding: 40px 32px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				gap: 16px;
+				padding: 0;
+				position: relative;
+				overflow: hidden;
+				border-bottom-left-radius: 10px;
 			}
 			.modal-img-side p {
-				font-size: 13px;
-				color: var(--mid);
-				text-align: center;
-				max-width: 200px;
-				line-height: 1.6;
+				display: none;
 			}
 			.modal-info-side {
 				padding: 32px 28px;
@@ -1095,8 +1102,10 @@
 			}
 			.footer-brand-name {
 				font-family: "Oswald", sans-serif;
-				font-size: 16px;
-				color: var(--white);
+				font-weight: normal;
+				font-size: 20px;
+				color: var(--red);
+				letter-spacing: 1px;
 			}
 			.footer-brand p {
 				font-size: 14px;
@@ -1186,8 +1195,9 @@
 					grid-template-columns: 1fr;
 				}
 				.modal-img-side {
-					padding: 28px 24px;
-					font-size: 72px;
+					padding: 0;
+					min-height: 250px;
+					border-bottom-left-radius: 0;
 				}
 				.about-grid {
 					grid-template-columns: 1fr;
@@ -1226,7 +1236,7 @@
 .why-icon-img { width: 48px; height: 48px; margin-bottom: 14px; object-fit: contain; }
 .eq-img-tag { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
 .eq-card:hover .eq-img-tag { transform: scale(1.05); }
-#modalImage { width: 100%; max-height: 250px; object-fit: contain; margin-bottom: 16px; }
+#modalImage { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .review-avatar-img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; }
 .about-icon { width: 24px; height: 24px; flex-shrink: 0; object-fit: contain; }
 .contact-icon-img { width: 24px; height: 24px; object-fit: contain; }

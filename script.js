@@ -54,7 +54,7 @@ function buildGrid() {
 
 function openModal(eq) {
 	document.getElementById("modalTitle").textContent = eq.name;
-	document.getElementById("modalImage").src = eq.image;
+	document.getElementById("modalImage").src = eq.modalImage || eq.image;
 	document.getElementById("modalImage").alt = eq.name;
 	document.getElementById("modalImgCaption").textContent = eq.subtitle;
 	document.getElementById("modalSubtitle").textContent = eq.subtitle;

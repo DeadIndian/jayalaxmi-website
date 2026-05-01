@@ -3,6 +3,7 @@
     {
       "id": 1,
       "image": "assets/images/equipment/srp.jpg",
+      "modalImage": "assets/images/equipment/srp-detail.jpg",
       "tag": "Access Platform",
       "name": "Suspended Platform (Gondola)",
       "short": "Rope-suspended work platform for exterior building maintenance and finishing.",
@@ -21,6 +22,7 @@
     {
       "id": 2,
       "image": "assets/images/equipment/material-hoist.png",
+      "modalImage": "assets/images/equipment/material-hoist-detail.png",
       "tag": "Hoist & Lift",
       "name": "Material Hoist",
       "short": "Heavy-duty vertical transport for materials on construction sites.",
@@ -36,8 +38,9 @@
       "pills": ["sale", "rent", "service & spares"]
     },
     {
-      "id": 4,
+      "id": 3,
       "image": "assets/images/equipment/bar-bending.jpg",
+      "modalImage": "assets/images/equipment/bar-bending-detail.jpg",
       "tag": "Steel Work",
       "name": "Bar Bending Machine",
       "short": "Electrically operated machine to bend TMT steel bars up to 40 mm.",
@@ -53,8 +56,9 @@
       "pills": ["sale", "service & spares"]
     },
     {
-      "id": 5,
+      "id": 4,
       "image": "assets/images/equipment/bar-cutting.jpg",
+      "modalImage": "assets/images/equipment/bar-cutting-detail.jpg",
       "tag": "Steel Work",
       "name": "Bar Cutting Machine",
       "short": "Heavy-duty machine for cutting TMT reinforcement bars accurately on site.",
@@ -71,8 +75,9 @@
     },
     
     {
-      "id": 6,
+      "id": 5,
       "image": "assets/images/equipment/mini-crane.jpg",
+      "modalImage": "assets/images/equipment/mini-crane-detail.jpg",
       "tag": "Crane",
       "name": "Mini Crane",
       "short": "Compact crane for lifting materials on construction sites and tight spaces.",
@@ -87,8 +92,9 @@
       "pills": ["sale", "rent", "service & spares"]
     },
     {
-      "id": 7,
+      "id": 6,
       "image": "assets/images/equipment/passenger-hoist.jpg",
+      "modalImage": "assets/images/equipment/passenger-hoist-detail.jpg",
       "tag": "Hoist & Lift",
       "name": "Passenger Hoist",
       "short": "Safe and efficient vertical transportation for personnel and materials.",
@@ -103,8 +109,9 @@
       "pills": ["sale", "rent", "service & spares"]
     },
     {
-      "id": 8,
+      "id": 7,
       "image": "assets/images/equipment/tower-crane.jpg",
+      "modalImage": "assets/images/equipment/tower-crane-detail.jpg",
       "tag": "Crane",
       "name": "Tower Crane",
       "short": "Heavy-duty lifting equipment for major construction and high-rise projects.",
@@ -119,8 +126,9 @@
       "pills": ["rent","service & spares"]
     },
     {
-      "id": 3,
-      "image": "assets/images/equipment/concrete-mixer.jpg",
+      "id": 8,
+      "image": "assets/images/equipment/rmc.png",
+      "modalImage": "assets/images/equipment/rmc.png",
       "tag": "Concrete Mixing",
       "name": "RMC Plant",
       "short": "Portable and stationary concrete mixers for on-site concrete preparation.",
