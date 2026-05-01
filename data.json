@@ -4,14 +4,14 @@
       "id": 1,
       "image": "assets/images/equipment/builder-hoist.jpg",
       "tag": "Hoist & Lift",
-      "name": "Builder Hoist / Material Lift",
+      "name": "Material Hoist",
       "short": "Heavy-duty vertical transport for materials and passengers on construction sites.",
-      "subtitle": "High-Capacity Builder Hoist",
+      "subtitle": "High-Capacity Material/Builder Hoist",
       "desc": "Our Builder Hoists are robust, safety-certified machines ideal for high-rise and multi-storey construction. They transport heavy materials — bricks, sand, steel — vertically with ease, reducing manual labour and saving time. Available in single-cage and twin-cage configurations.",
       "specs": [
-        ["Capacity", "Up to 2,000 kg"],
+        ["Gross Load", "Up to 1,000 kg"],
+        ["Net Load", "750 kg"],
         ["Speed", "Up to 36 m/min"],
-        ["Mast Height", "Up to 200 m"],
         ["Power", "3-phase 415V"],
         ["Safety", "Safety device, overload protection"]
       ],
