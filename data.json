@@ -2,6 +2,24 @@
   "equipment": [
     {
       "id": 1,
+      "image": "assets/images/equipment/srp.jpg",
+      "tag": "Access Platform",
+      "name": "Suspended Platform (Gondola)",
+      "short": "Rope-suspended work platform for exterior building maintenance and finishing.",
+      "subtitle": "Motorised Gondola / ZLP Platform",
+      "desc": "Suspended platforms (gondolas) are used for external building maintenance, glass cleaning, painting and plastering on finished high-rise structures. Our ZLP series gondolas are electrically powered with built-in safety locks and are CE-compliant.",
+      "specs": [
+        ["Carrying capacity", "800Kg"],
+        ["Platform Length", "7.5m"],
+        ["Safety Height", "100m"],
+        ["Safety Lock Type", "LST 30"],
+        ["Hoist Model", "LTD 8.0"],
+        ["Voltage", "415V"]
+      ],
+      "pills": ["sale", "rent", "service & spares"]
+    },
+    {
+      "id": 2,
       "image": "assets/images/equipment/material-hoist.png",
       "tag": "Hoist & Lift",
       "name": "Material Hoist",
@@ -18,41 +36,7 @@
       "pills": ["sale", "rent", "service & spares"]
     },
     {
-      "id": 2,
-      "image": "assets/images/equipment/gondola.jpg",
-      "tag": "Access Platform",
-      "name": "Suspended Platform (Gondola)",
-      "short": "Rope-suspended work platform for exterior building maintenance and finishing.",
-      "subtitle": "Motorised Gondola / ZLP Platform",
-      "desc": "Suspended platforms (gondolas) are used for external building maintenance, glass cleaning, painting and plastering on finished high-rise structures. Our ZLP series gondolas are electrically powered with built-in safety locks and are CE-compliant.",
-      "specs": [
-        ["Platform Length", "2 m – 10 m"],
-        ["Safe Working Load", "Up to 800 kg"],
-        ["Rope Diameter", "8.3 mm steel wire"],
-        ["Hoist Type", "Electric, 400–800 kg per hoist"],
-        ["Safety", "Safety lock, overload cut-off"]
-      ],
-      "pills": ["sale", "rent", "service & spares"]
-    },
-    {
       "id": 4,
-      "image": "assets/images/equipment/concrete-mixer.jpg",
-      "tag": "Concrete Mixing",
-      "name": "RMC Plant",
-      "short": "Portable and stationary concrete mixers for on-site concrete preparation.",
-      "subtitle": "Tilting Drum Concrete Mixer",
-      "desc": "Reliable concrete mixers for all construction needs. Our mixers are built for heavy-duty use on site, ensuring consistent quality concrete. Available in electric and diesel variants.",
-      "specs": [
-        ["Drum Capacity", "200 L, 350 L, 500 L"],
-        ["Power Options", "Electric / Diesel"],
-        ["Output", "Up to 12 m³/hour"],
-        ["Drum Speed", "14–22 RPM"],
-        ["Weight", "180 – 600 kg"]
-      ],
-      "pills": ["rent"]
-    },
-    {
-      "id": 5,
       "image": "assets/images/equipment/bar-bending.jpg",
       "tag": "Steel Work",
       "name": "Bar Bending Machine",
@@ -69,7 +53,7 @@
       "pills": ["sale", "service & spares"]
     },
     {
-      "id": 6,
+      "id": 5,
       "image": "assets/images/equipment/bar-cutting.jpg",
       "tag": "Steel Work",
       "name": "Bar Cutting Machine",
@@ -85,39 +69,71 @@
       ],
       "pills": ["sale", "service & spares"]
     },
+    
+    {
+      "id": 6,
+      "image": "assets/images/equipment/mini-crane.jpg",
+      "tag": "Crane",
+      "name": "Mini Crane",
+      "short": "Compact crane for lifting materials on construction sites and tight spaces.",
+      "subtitle": "Electric Mini Crane",
+      "desc": "Mini cranes offer an ideal solution for lifting tasks in restricted spaces. With their compact size and excellent lifting capabilities, they are perfect for indoor operations, roofing, and structural steel erection.",
+      "specs": [
+        ["Capacity", "Up to 1000 kg"],
+        ["Max Lifting Height", "30m"],
+        ["Power Supply", "220V / 415V"],
+        ["Rotation", "360 degrees"]
+      ],
+      "pills": ["sale", "rent", "service & spares"]
+    },
     {
       "id": 7,
-      "image": "assets/images/equipment/concrete-pump.jpg",
-      "tag": "Concrete",
-      "name": "Concrete Pump",
-      "short": "Stationary and trailer-mounted pumps for placing concrete at height or distance.",
-      "subtitle": "Stationary / Trailer Concrete Pump",
-      "desc": "Concrete pumps dramatically speed up concrete placement, especially in high-rise construction or areas inaccessible to trucks. Our pumps deliver concrete vertically and horizontally with minimal segregation. Available as stationary and trailer-mounted units.",
+      "image": "assets/images/equipment/passenger-hoist.jpg",
+      "tag": "Hoist & Lift",
+      "name": "Passenger Hoist",
+      "short": "Safe and efficient vertical transportation for personnel and materials.",
+      "subtitle": "Construction Passenger Hoist",
+      "desc": "Designed for high-rise construction, our passenger hoists transport workers and materials quickly and safely to upper floors. They feature variable frequency drives for smooth starts and stops, and multiple safety mechanisms.",
       "specs": [
-        ["Output", "30 – 80 m³/hour"],
-        ["Vertical Range", "Up to 120 m"],
-        ["Horizontal Range", "Up to 400 m"],
-        ["Cylinder Size", "180 × 1,400 mm"],
-        ["Power", "Diesel / Electric"]
+        ["Capacity", "1000 kg - 2000 kg"],
+        ["Passengers", "10 - 20 persons"],
+        ["Speed", "Up to 40 m/min"],
+        ["Power Supply", "415V, 3-phase"]
       ],
-      "pills": ["sale", "rent", "service"]
+      "pills": ["sale", "rent", "service & spares"]
     },
     {
       "id": 8,
-      "image": "assets/images/equipment/batching-plant.jpg",
-      "tag": "Batching",
-      "name": "Concrete Batching Plant",
-      "short": "Fully automated batching plants for large-scale RMC production on site.",
-      "subtitle": "Stationary Concrete Batching Plant",
-      "desc": "For large infrastructure and residential projects requiring consistent, high-volume concrete supply, our batching plants offer complete automation with computerised mix control. Capacities available from 15 m³/hr to 90 m³/hr. Installation and commissioning support included.",
+      "image": "assets/images/equipment/tower-crane.jpg",
+      "tag": "Crane",
+      "name": "Tower Crane",
+      "short": "Heavy-duty lifting equipment for major construction and high-rise projects.",
+      "subtitle": "High-Capacity Tower Crane",
+      "desc": "Tower cranes are essential for high-rise building projects, offering exceptional lifting heights and capacities. We supply top-slewing tower cranes that are robust, reliable, and equipped with the latest safety control systems.",
       "specs": [
-        ["Output", "15 – 90 m³/hour"],
-        ["Control", "Fully automatic, PLC-based"],
-        ["Aggregate Bins", "2, 3 or 4 compartments"],
-        ["Mixer Type", "Twin-shaft compulsory mixer"],
-        ["Cement Silo", "50 T – 200 T capacity"]
+        ["Max Load", "5,000 kg - 10,000 kg"],
+        ["Jib Length", "50m - 60m"],
+        ["Tip Load", "1,000 kg - 1,500 kg"],
+        ["Max Height", "Up to 150m"]
       ],
-      "pills": ["sale", "service"]
+      "pills": ["rent","service & spares"]
+    },
+    {
+      "id": 3,
+      "image": "assets/images/equipment/concrete-mixer.jpg",
+      "tag": "Concrete Mixing",
+      "name": "RMC Plant",
+      "short": "Portable and stationary concrete mixers for on-site concrete preparation.",
+      "subtitle": "Tilting Drum Concrete Mixer",
+      "desc": "Reliable concrete mixers for all construction needs. Our mixers are built for heavy-duty use on site, ensuring consistent quality concrete. Available in electric and diesel variants.",
+      "specs": [
+        ["Drum Capacity", "200 L, 350 L, 500 L"],
+        ["Power Options", "Electric / Diesel"],
+        ["Output", "Up to 12 m³/hour"],
+        ["Drum Speed", "14–22 RPM"],
+        ["Weight", "180 – 600 kg"]
+      ],
+      "pills": ["rent","service & spares"]
     }
   ],
   "reviews": [

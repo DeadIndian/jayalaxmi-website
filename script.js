@@ -2,11 +2,13 @@ const pillLabel = {
 	sale: "For Sale",
 	rent: "For Rent",
 	service: "Service Available",
+	"service & spares": "Service & Spares",
 };
 const pillClass = {
 	sale: "pill-sale",
 	rent: "pill-rent",
 	service: "pill-svc",
+	"service & spares": "pill-svc",
 };
 
 let equipmentData = [];
