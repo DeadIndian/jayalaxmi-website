@@ -1,0 +1,215 @@
+{
+  "equipment": [
+    {
+      "id": 1,
+      "image": "assets/images/equipment/builder-hoist.jpg",
+      "tag": "Hoist & Lift",
+      "name": "Builder Hoist / Material Lift",
+      "short": "Heavy-duty vertical transport for materials and passengers on construction sites.",
+      "subtitle": "High-Capacity Builder Hoist",
+      "desc": "Our Builder Hoists are robust, safety-certified machines ideal for high-rise and multi-storey construction. They transport heavy materials — bricks, sand, steel — vertically with ease, reducing manual labour and saving time. Available in single-cage and twin-cage configurations.",
+      "specs": [
+        ["Capacity", "Up to 2,000 kg"],
+        ["Speed", "Up to 36 m/min"],
+        ["Mast Height", "Up to 200 m"],
+        ["Power", "3-phase 415V"],
+        ["Safety", "Safety device, overload protection"]
+      ],
+      "pills": ["sale", "rent", "service"]
+    },
+    {
+      "id": 2,
+      "image": "assets/images/equipment/mast-climbing.jpg",
+      "tag": "Climbing Platform",
+      "name": "Mast Climbing Platform",
+      "short": "Self-climbing work platform for facades, plastering and finishing work.",
+      "subtitle": "Motorised Mast Climbing Work Platform",
+      "desc": "Mast Climbing Platforms provide a safe and highly productive alternative to traditional scaffolding. Ideal for facade plastering, waterproofing, painting and cladding work on high-rise buildings. Motorised, so workers and materials move up and down effortlessly.",
+      "specs": [
+        ["Platform Width", "1.5 m – 24 m (extendable)"],
+        ["Load Capacity", "Up to 3,000 kg"],
+        ["Speed", "6 – 12 m/min"],
+        ["Power", "3-phase 415V"],
+        ["Application", "Facade, plastering, waterproofing"]
+      ],
+      "pills": ["sale", "rent"]
+    },
+    {
+      "id": 3,
+      "image": "assets/images/equipment/gondola.jpg",
+      "tag": "Access Platform",
+      "name": "Suspended Platform (Gondola)",
+      "short": "Rope-suspended work platform for exterior building maintenance and finishing.",
+      "subtitle": "Motorised Gondola / ZLP Platform",
+      "desc": "Suspended platforms (gondolas) are used for external building maintenance, glass cleaning, painting and plastering on finished high-rise structures. Our ZLP series gondolas are electrically powered with built-in safety locks and are CE-compliant.",
+      "specs": [
+        ["Platform Length", "2 m – 10 m"],
+        ["Safe Working Load", "Up to 800 kg"],
+        ["Rope Diameter", "8.3 mm steel wire"],
+        ["Hoist Type", "Electric, 400–800 kg per hoist"],
+        ["Safety", "Safety lock, overload cut-off"]
+      ],
+      "pills": ["sale", "rent", "service"]
+    },
+    {
+      "id": 4,
+      "image": "assets/images/equipment/concrete-mixer.jpg",
+      "tag": "Mixing",
+      "name": "Concrete Mixer",
+      "short": "Drum-type concrete mixers for on-site concrete preparation.",
+      "subtitle": "Tilting Drum Concrete Mixer",
+      "desc": "Our concrete mixers are available in various drum capacities and are ideal for all types of civil construction. Durable cast-iron gears, heavy-duty motors and robust steel frames make them perfect for continuous site use. Available in petrol, diesel and electric variants.",
+      "specs": [
+        ["Drum Capacity", "200 L, 350 L, 500 L"],
+        ["Power Options", "Electric / Diesel"],
+        ["Output", "Up to 12 m³/hour"],
+        ["Drum Speed", "14–22 RPM"],
+        ["Weight", "180 – 600 kg"]
+      ],
+      "pills": ["sale", "rent"]
+    },
+    {
+      "id": 5,
+      "image": "assets/images/equipment/bar-bending.jpg",
+      "tag": "Steel Work",
+      "name": "Bar Bending Machine",
+      "short": "Electrically operated machine to bend TMT steel bars up to 40 mm.",
+      "subtitle": "Electric Bar Bending Machine",
+      "desc": "Bar bending machines are essential for any RCC structure. Our machines handle TMT bars from 6 mm to 40 mm with precision angle settings. They are built for heavy-duty continuous use on large construction sites and are available for both sale and rent.",
+      "specs": [
+        ["Bar Diameter", "6 mm – 40 mm"],
+        ["Bending Angle", "0° – 180°"],
+        ["Motor Power", "2.2 kW – 5.5 kW"],
+        ["Speed", "5–14 RPM"],
+        ["Power Supply", "415V, 3-phase"]
+      ],
+      "pills": ["sale", "rent"]
+    },
+    {
+      "id": 6,
+      "image": "assets/images/equipment/bar-cutting.jpg",
+      "tag": "Steel Work",
+      "name": "Bar Cutting Machine",
+      "short": "Heavy-duty machine for cutting TMT reinforcement bars accurately on site.",
+      "subtitle": "Electric Bar Cutting Machine",
+      "desc": "Our bar cutting machines provide clean, accurate cuts on TMT reinforcement bars in seconds. With a robust cast-iron body and high-torque motor, they handle bars up to 40 mm diameter. Portable models also available for smaller sites.",
+      "specs": [
+        ["Bar Diameter", "Up to 40 mm"],
+        ["Cutting Speed", "28 cuts/min"],
+        ["Motor Power", "3 kW – 5.5 kW"],
+        ["Blade Type", "Hardened alloy steel"],
+        ["Power Supply", "415V, 3-phase"]
+      ],
+      "pills": ["sale", "rent"]
+    },
+    {
+      "id": 7,
+      "image": "assets/images/equipment/concrete-pump.jpg",
+      "tag": "Concrete",
+      "name": "Concrete Pump",
+      "short": "Stationary and trailer-mounted pumps for placing concrete at height or distance.",
+      "subtitle": "Stationary / Trailer Concrete Pump",
+      "desc": "Concrete pumps dramatically speed up concrete placement, especially in high-rise construction or areas inaccessible to trucks. Our pumps deliver concrete vertically and horizontally with minimal segregation. Available as stationary and trailer-mounted units.",
+      "specs": [
+        ["Output", "30 – 80 m³/hour"],
+        ["Vertical Range", "Up to 120 m"],
+        ["Horizontal Range", "Up to 400 m"],
+        ["Cylinder Size", "180 × 1,400 mm"],
+        ["Power", "Diesel / Electric"]
+      ],
+      "pills": ["sale", "rent", "service"]
+    },
+    {
+      "id": 8,
+      "image": "assets/images/equipment/concrete-vibrator.jpg",
+      "tag": "Compaction",
+      "name": "Concrete Vibrator / Poker",
+      "short": "Immersion vibrators to remove air pockets and compact freshly poured concrete.",
+      "subtitle": "Petrol / Electric Immersion Vibrator",
+      "desc": "Concrete vibrators ensure proper compaction and eliminate voids and honeycombing in RCC structures. We offer internal (poker) vibrators with various needle diameters as well as surface vibrators and screed boards. Available in petrol, electric and pneumatic models.",
+      "specs": [
+        ["Needle Diameter", "25 mm, 40 mm, 60 mm"],
+        ["Frequency", "10,000–12,000 VPM"],
+        ["Power", "Petrol / Electric"],
+        ["Head Length", "300 – 500 mm"],
+        ["Application", "Columns, beams, slabs, foundations"]
+      ],
+      "pills": ["sale", "rent"]
+    },
+    {
+      "id": 9,
+      "image": "assets/images/equipment/batching-plant.jpg",
+      "tag": "Batching",
+      "name": "Concrete Batching Plant",
+      "short": "Fully automated batching plants for large-scale RMC production on site.",
+      "subtitle": "Stationary Concrete Batching Plant",
+      "desc": "For large infrastructure and residential projects requiring consistent, high-volume concrete supply, our batching plants offer complete automation with computerised mix control. Capacities available from 15 m³/hr to 90 m³/hr. Installation and commissioning support included.",
+      "specs": [
+        ["Output", "15 – 90 m³/hour"],
+        ["Control", "Fully automatic, PLC-based"],
+        ["Aggregate Bins", "2, 3 or 4 compartments"],
+        ["Mixer Type", "Twin-shaft compulsory mixer"],
+        ["Cement Silo", "50 T – 200 T capacity"]
+      ],
+      "pills": ["sale", "service"]
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Suresh Reddy",
+      "role": "Civil Contractor, Hyderabad",
+      "stars": 5,
+      "text": "Excellent quality hoists. Taken on rent for 6 months and they never gave us a single problem. The service team is very responsive.",
+      "image": "assets/images/customers/suresh.jpg"
+    },
+    {
+      "name": "Anil Kumar",
+      "role": "Builder, LB Nagar",
+      "stars": 5,
+      "text": "I purchased a bar bending machine and bar cutter from them. Very good prices and the machines are working perfectly even after 2 years.",
+      "image": "assets/images/customers/anil.jpg"
+    },
+    {
+      "name": "Rajesh Verma",
+      "role": "Project Manager, Uppal",
+      "stars": 4,
+      "text": "Good range of equipment. Rented a concrete pump for our high-rise project. Smooth coordination and on-time delivery to site.",
+      "image": "assets/images/customers/rajesh.jpg"
+    },
+    {
+      "name": "Venkat Rao",
+      "role": "Contractor, Kukatpally",
+      "stars": 5,
+      "text": "Been buying from Jayalaxmi for years. Very trustworthy. If there is ever a breakdown, they send a technician the same day.",
+      "image": "assets/images/customers/venkat.jpg"
+    },
+    {
+      "name": "Mohammad Farhan",
+      "role": "Developer, Shamshabad",
+      "stars": 5,
+      "text": "The gondola platforms they supplied are excellent quality. Workers feel safe and the support from the team is outstanding.",
+      "image": "assets/images/customers/farhan.jpg"
+    },
+    {
+      "name": "Prasad Nair",
+      "role": "Site Engineer, Gachibowli",
+      "stars": 4,
+      "text": "Prompt delivery, good condition equipment. Would have given 5 stars but one mixer needed minor adjustment on first day. Otherwise no issues.",
+      "image": "assets/images/customers/prasad.jpg"
+    },
+    {
+      "name": "Srinivas Rao",
+      "role": "Contractor, Medchal",
+      "stars": 5,
+      "text": "Very professional. They explained everything about the mast climbing platform and gave us training too. Highly recommended.",
+      "image": "assets/images/customers/srinivas.jpg"
+    },
+    {
+      "name": "Kiran Babu",
+      "role": "Civil Engineer, Miyapur",
+      "stars": 5,
+      "text": "Competitive pricing compared to other vendors in Hyderabad. Equipment is always in good maintained condition. Great after-sales too.",
+      "image": "assets/images/customers/kiran.jpg"
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Jayalaxmi Enterprises – Construction Equipment Sales, Rental & Service
+		</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://unpkg.com/lucide@latest"></script>
+	</head>
+	<body>
+		<!-- ─── NAVBAR ─── -->
+		<nav id="navbar">
+			<a class="nav-brand" href="#">
+				<img src="assets/images/logo.png" alt="Jayalaxmi Enterprises Logo" class="nav-logo-img">
+				<div class="nav-title">
+					Jayalaxmi Enterprises
+					<span>Construction Equipment</span>
+				</div>
+			</a>
+			<ul class="nav-links">
+				<li><a href="#equipment">Equipment</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#reviews">Reviews</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="tel:7702212693" class="nav-cta">📞 7702212693</a></li>
+			</ul>
+			<button class="hamburger" id="ham" aria-label="Menu">
+				<span></span><span></span><span></span>
+			</button>
+		</nav>
+		<div class="mobile-menu" id="mobileMenu">
+			<a href="#equipment" onclick="closeMobile()">Equipment</a>
+			<a href="#about" onclick="closeMobile()">About Us</a>
+			<a href="#reviews" onclick="closeMobile()">Reviews</a>
+			<a href="#contact" onclick="closeMobile()">Contact</a>
+			<a href="tel:7702212693">📞 Call: 7702212693</a>
+		</div>
+
+		<!-- ─── HERO ─── -->
+		<section class="hero" id="home">
+			<img src="assets/images/logo-large.png" alt="Jayalaxmi Enterprises Logo" class="hero-logo-img">
+			<h1>JAYALAXMI<br /><em>ENTERPRISES</em></h1>
+			<p class="hero-sub">Construction Equipment Sales, Rental &amp; Service</p>
+			<p class="hero-tagline">
+				We supply, rent and service heavy construction machinery across
+				Hyderabad. Reliable machines. Honest pricing. On-time delivery.
+			</p>
+			<div class="hero-actions">
+				<a href="#equipment" class="btn-primary">🔧 Browse Equipment</a>
+				<a href="#contact" class="btn-outline">📩 Send Enquiry</a>
+			</div>
+			<div class="hero-stats">
+				<div class="stat">
+					<span class="stat-num">15+</span
+					><span class="stat-label">Years Experience</span>
+				</div>
+				<div class="stat">
+					<span class="stat-num">500+</span
+					><span class="stat-label">Projects Served</span>
+				</div>
+				<div class="stat">
+					<span class="stat-num">50+</span
+					><span class="stat-label">Equipment Types</span>
+				</div>
+				<div class="stat">
+					<span class="stat-num">24/7</span
+					><span class="stat-label">Service Support</span>
+				</div>
+			</div>
+			<div class="scroll-hint">
+				<svg
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					viewBox="0 0 24 24">
+					<path d="M19 9l-7 7-7-7" />
+				</svg>
+				Scroll to explore
+			</div>
+		</section>
+
+		<!-- ─── QUICK STRIP ─── -->
+		<div class="strip">
+			📞 Call us anytime: <a href="tel:7702212693">7702212693</a> &nbsp;|&nbsp;
+			✉️
+			<a href="mailto:jayalaxmienterprises26@gmail.com"
+				>jayalaxmienterprises26@gmail.com</a
+			>
+			&nbsp;|&nbsp; 📍 Kattedan, Hyderabad – 500077
+		</div>
+
+		<!-- ─── WHY US ─── -->
+		<section class="why-us" id="why">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">Why Choose Us</span>
+					<h2 class="section-title">
+						Built on <span>Trust &amp; Experience</span>
+					</h2>
+					<div class="divider"></div>
+					<p class="section-desc">
+						We have been serving contractors, builders and infrastructure firms
+						across Hyderabad for over a decade.
+					</p>
+				</div>
+				<div class="why-grid">
+					<div class="why-card">
+						<i data-lucide="truck" class="why-icon-img"></i>
+						<h3>Large Fleet</h3>
+						<p>
+							Wide range of construction equipment available for sale and on
+							rent – all maintained in ready-to-use condition.
+						</p>
+					</div>
+					<div class="why-card">
+						<i data-lucide="wrench" class="why-icon-img"></i>
+						<h3>Expert Service</h3>
+						<p>
+							Our in-house technicians handle maintenance and breakdown service
+							so your project never stops.
+						</p>
+					</div>
+					<div class="why-card">
+						<i data-lucide="indian-rupee" class="why-icon-img"></i>
+						<h3>Competitive Pricing</h3>
+						<p>
+							Transparent quotations with no hidden charges. Flexible rental
+							terms from daily to monthly.
+						</p>
+					</div>
+					<div class="why-card">
+						<i data-lucide="map-pin" class="why-icon-img"></i>
+						<h3>Based in Hyderabad</h3>
+						<p>
+							Located at Kattedan, we serve sites across Hyderabad,
+							Secunderabad, and surrounding districts.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── EQUIPMENT ─── -->
+		<section class="equipment" id="equipment">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">Our Equipment</span>
+					<h2 class="section-title">
+						Machinery for <span>Every Project</span>
+					</h2>
+					<div class="divider"></div>
+					<p class="section-desc">
+						Click on any machine to view full specifications and send a WhatsApp
+						enquiry directly.
+					</p>
+				</div>
+				<div class="eq-grid" id="eqGrid">
+					<!-- cards injected by JS -->
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── MODAL ─── -->
+		<div
+			class="modal-overlay"
+			id="modalOverlay"
+			role="dialog"
+			aria-modal="true">
+			<div class="modal" id="modal">
+				<div class="modal-header">
+					<h2 id="modalTitle">Equipment Name</h2>
+					<button class="modal-close" id="modalClose" aria-label="Close">
+						✕
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="modal-img-side">
+						<img id="modalImage" src="" alt="Equipment Image">
+						<p id="modalImgCaption">
+							Industrial grade equipment available for sale &amp; rent
+						</p>
+					</div>
+					<div class="modal-info-side">
+						<div class="modal-pills" id="modalPills"></div>
+						<h3 id="modalSubtitle"></h3>
+						<p class="modal-desc" id="modalDesc"></p>
+						<div class="modal-specs">
+							<h4>Specifications</h4>
+							<div id="modalSpecs"></div>
+						</div>
+						<a
+							class="modal-enquire"
+							id="modalEnquire"
+							href="#"
+							target="_blank"
+							rel="noopener">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor">
+								<path
+									d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+								<path
+									d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.855L.057 23.215a.75.75 0 00.908.908l5.36-1.466A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.51-5.21-1.398l-.374-.217-3.882 1.062 1.063-3.882-.217-.374A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+							</svg>
+							Enquire on WhatsApp
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ─── ABOUT ─── -->
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about-grid">
+					<div class="about-visual">
+						<div class="about-big">15+</div>
+						<p>Years of trusted service in construction equipment</p>
+						<ul class="about-list">
+							<li>
+								<i data-lucide="shopping-cart" class="about-icon"></i><span
+									>Sales, rental &amp; after-sales service under one roof</span
+								>
+							</li>
+							<li>
+								<i data-lucide="map-pin" class="about-icon"></i><span>Centrally located at Kattedan, Hyderabad</span>
+							</li>
+							<li>
+								<i data-lucide="tool" class="about-icon"></i><span
+									>Trained technicians for on-site &amp; in-house repairs</span
+								>
+							</li>
+							<li>
+								<i data-lucide="handshake" class="about-icon"></i><span>Served 500+ projects across Telangana &amp; AP</span>
+							</li>
+						</ul>
+					</div>
+					<div class="about-text">
+						<span class="section-label">About Us</span>
+						<h2>Jayalaxmi<br />Enterprises</h2>
+						<p>
+							Established and rooted in Hyderabad, Jayalaxmi Enterprises has
+							been a dependable name in the construction equipment industry. We
+							understand that every project has its own demands, deadlines and
+							budget – and we work with you to find the right machine at the
+							right price.
+						</p>
+						<p>
+							Whether you are a small contractor building a residential complex
+							or a large infrastructure firm, we have the right equipment – and
+							the right support – to keep your project running.
+						</p>
+						<div class="about-addr">
+							<strong>📍 Our Location</strong>
+							#8-8-141, Madhuban Colony, Kattedan, Hyderabad – 500077<br />
+							📞
+							<a href="tel:7702212693" style="color: var(--blue)">7702212693</a
+							><br />
+							✉️
+							<a
+								href="mailto:jayalaxmienterprises26@gmail.com"
+								style="color: var(--blue)"
+								>jayalaxmienterprises26@gmail.com</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── REVIEWS ─── -->
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">Customer Reviews</span>
+					<h2 class="section-title">What Our Clients Say</h2>
+					<div class="divider"></div>
+					<p class="section-desc">
+						Trusted by contractors and builders across Hyderabad for over a
+						decade.
+					</p>
+				</div>
+			</div>
+			<div class="reviews-track-wrap">
+				<div class="reviews-track" id="reviewsTrack">
+					<!-- injected by JS -->
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── CONTACT ─── -->
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">Get In Touch</span>
+					<h2 class="section-title">Send an <span>Enquiry</span></h2>
+					<div class="divider"></div>
+					<p class="section-desc">
+						Fill in the form below or contact us directly on WhatsApp. We
+						respond within hours.
+					</p>
+				</div>
+				<div class="contact-grid">
+					<div class="contact-info">
+						<h3>Contact Details</h3>
+						<div class="contact-item">
+							<i data-lucide="phone" class="contact-icon-img"></i>
+							<div class="contact-item-text">
+								<strong>Phone / WhatsApp</strong>
+								<a href="tel:7702212693">7702212693</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i data-lucide="mail" class="contact-icon-img"></i>
+							<div class="contact-item-text">
+								<strong>Email</strong>
+								<a href="mailto:jayalaxmienterprises26@gmail.com"
+									>jayalaxmienterprises26@gmail.com</a
+								>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i data-lucide="map-pin" class="contact-icon-img"></i>
+							<div class="contact-item-text" style="flex: 1;">
+								<strong>Address</strong>
+								<div class="contact-map" style="margin: 12px 0;">
+									<iframe 
+										src="https://maps.google.com/maps?q=17.300778,78.435048&hl=en&z=14&output=embed" 
+										width="100%" 
+										height="180" 
+										style="border:0; border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);" 
+										allowfullscreen="" 
+										loading="lazy" 
+										referrerpolicy="no-referrer-when-downgrade">
+									</iframe>
+								</div>
+								<p>#8-8-141, Madhuban Colony, Kattedan, Hyderabad – 500077</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i data-lucide="clock" class="contact-icon-img"></i>
+							<div class="contact-item-text">
+								<strong>Working Hours</strong>
+								<p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+							</div>
+						</div>
+						
+						
+						<a
+							href="https://wa.me/917702212693?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20construction%20equipment."
+							class="wa-btn"
+							target="_blank"
+							rel="noopener">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="22"
+								height="22"
+								viewBox="0 0 24 24"
+								fill="white">
+								<path
+									d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+								<path
+									d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.855L.057 23.215a.75.75 0 00.908.908l5.36-1.466A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.51-5.21-1.398l-.374-.217-3.882 1.062 1.063-3.882-.217-.374A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+							</svg>
+							Chat on WhatsApp
+						</a>
+					</div>
+
+					<div>
+						<form
+							class="contact-form"
+							id="contactForm"
+							onsubmit="submitForm(event)">
+							<div class="form-row">
+								<div class="form-group">
+									<label for="fname">Your Name *</label>
+									<input
+										type="text"
+										id="fname"
+										placeholder="Ravi Kumar"
+										required />
+								</div>
+								<div class="form-group">
+									<label for="fphone">Phone Number *</label>
+									<input
+										type="tel"
+										id="fphone"
+										placeholder="9XXXXXXXXX"
+										required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="femail">Email Address</label>
+								<input type="email" id="femail" placeholder="you@example.com" />
+							</div>
+							<div class="form-group">
+								<label for="fequip">Equipment of Interest *</label>
+								<select id="fequip" required>
+									<option value="">— Select Equipment —</option>
+									<option>Builder Hoist / Material Lift</option>
+									<option>Mast Climbing Platform</option>
+									<option>Suspended Platform (Gondola)</option>
+									<option>Concrete Mixer</option>
+									<option>Bar Bending Machine</option>
+									<option>Bar Cutting Machine</option>
+									<option>Concrete Pump</option>
+									<option>Vibrator / Poker</option>
+									<option>Concrete Batching Plant</option>
+									<option>Other / Not Listed</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="ftype">Requirement Type *</label>
+								<select id="ftype" required>
+									<option value="">— Sale / Rent / Service —</option>
+									<option>Purchase / Buy</option>
+									<option>Rental</option>
+									<option>Service / Repair</option>
+									<option>Spare Parts</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="fmsg">Additional Details</label>
+								<textarea
+									id="fmsg"
+									placeholder="Tell us about your project, site location, duration of rental, etc."></textarea>
+							</div>
+							<p class="form-note">
+								* Required fields. We will contact you within 24 hours.
+							</p>
+							<button type="submit" class="form-submit">Send Enquiry →</button>
+							<div id="form-success">
+								✅ Thank you! We have received your enquiry and will contact you
+								shortly.
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ─── FOOTER ─── -->
+		<footer>
+			<div class="footer-inner">
+				<div class="footer-top">
+					<div class="footer-brand">
+						<div class="footer-logo-row">
+							<img src="assets/images/logo.png" alt="Jayalaxmi Enterprises" class="footer-logo-img">
+							<div class="footer-brand-name">Jayalaxmi Enterprises</div>
+						</div>
+						<p>
+							Construction Equipment Sales, Rental &amp; Service. Serving
+							Hyderabad and surrounding areas for over 15 years.
+						</p>
+					</div>
+					<div class="footer-links">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#equipment">Equipment</a></li>
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#reviews">Reviews</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-links">
+						<h4>Services</h4>
+						<ul>
+							<li><a href="#equipment">Equipment Sales</a></li>
+							<li><a href="#equipment">Equipment Rental</a></li>
+							<li><a href="#equipment">Repair &amp; Service</a></li>
+							<li><a href="#equipment">Spare Parts</a></li>
+						</ul>
+					</div>
+					<div class="footer-links">
+						<h4>Contact</h4>
+						<ul>
+							<li><a href="tel:7702212693">📞 7702212693</a></li>
+							<li>
+								<a href="mailto:jayalaxmienterprises26@gmail.com"
+									>✉️ jayalaxmienterprises26@gmail.com</a
+								>
+							</li>
+							<li><a href="#contact">📍 Kattedan, Hyd – 500077</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2025 Jayalaxmi Enterprises. All rights reserved.</span>
+					<span>Made with ❤️ in Hyderabad</span>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ─── FLOATING WA ─── -->
+		<a
+			class="float-wa"
+			href="https://wa.me/917702212693?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20construction%20equipment."
+			target="_blank"
+			rel="noopener"
+			aria-label="Chat on WhatsApp">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+				<path
+					d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.855L.057 23.215a.75.75 0 00.908.908l5.36-1.466A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.51-5.21-1.398l-.374-.217-3.882 1.062 1.063-3.882-.217-.374A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+			</svg>
+		</a>
+
+		<script src="script.js"></script>
+	</body>
+</html>
