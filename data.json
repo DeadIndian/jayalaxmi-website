@@ -2,10 +2,10 @@
   "equipment": [
     {
       "id": 1,
-      "image": "assets/images/equipment/builder-hoist.jpg",
+      "image": "assets/images/equipment/material-hoist.png",
       "tag": "Hoist & Lift",
       "name": "Material Hoist",
-      "short": "Heavy-duty vertical transport for materials and passengers on construction sites.",
+      "short": "Heavy-duty vertical transport for materials on construction sites.",
       "subtitle": "High-Capacity Material/Builder Hoist",
       "desc": "Our Builder Hoists are robust, safety-certified machines ideal for high-rise and multi-storey construction. They transport heavy materials — bricks, sand, steel — vertically with ease, reducing manual labour and saving time. Available in single-cage and twin-cage configurations.",
       "specs": [
@@ -15,27 +15,10 @@
         ["Power", "3-phase 415V"],
         ["Safety", "Safety device, overload protection"]
       ],
-      "pills": ["sale", "rent", "service"]
+      "pills": ["sale", "rent", "service & spares"]
     },
     {
       "id": 2,
-      "image": "assets/images/equipment/mast-climbing.jpg",
-      "tag": "Climbing Platform",
-      "name": "Mast Climbing Platform",
-      "short": "Self-climbing work platform for facades, plastering and finishing work.",
-      "subtitle": "Motorised Mast Climbing Work Platform",
-      "desc": "Mast Climbing Platforms provide a safe and highly productive alternative to traditional scaffolding. Ideal for facade plastering, waterproofing, painting and cladding work on high-rise buildings. Motorised, so workers and materials move up and down effortlessly.",
-      "specs": [
-        ["Platform Width", "1.5 m – 24 m (extendable)"],
-        ["Load Capacity", "Up to 3,000 kg"],
-        ["Speed", "6 – 12 m/min"],
-        ["Power", "3-phase 415V"],
-        ["Application", "Facade, plastering, waterproofing"]
-      ],
-      "pills": ["sale", "rent"]
-    },
-    {
-      "id": 3,
       "image": "assets/images/equipment/gondola.jpg",
       "tag": "Access Platform",
       "name": "Suspended Platform (Gondola)",
@@ -49,16 +32,16 @@
         ["Hoist Type", "Electric, 400–800 kg per hoist"],
         ["Safety", "Safety lock, overload cut-off"]
       ],
-      "pills": ["sale", "rent", "service"]
+      "pills": ["sale", "rent", "service & spares"]
     },
     {
       "id": 4,
       "image": "assets/images/equipment/concrete-mixer.jpg",
-      "tag": "Mixing",
-      "name": "Concrete Mixer",
-      "short": "Drum-type concrete mixers for on-site concrete preparation.",
+      "tag": "Concrete Mixing",
+      "name": "RMC Plant",
+      "short": "Portable and stationary concrete mixers for on-site concrete preparation.",
       "subtitle": "Tilting Drum Concrete Mixer",
-      "desc": "Our concrete mixers are available in various drum capacities and are ideal for all types of civil construction. Durable cast-iron gears, heavy-duty motors and robust steel frames make them perfect for continuous site use. Available in petrol, diesel and electric variants.",
+      "desc": "Reliable concrete mixers for all construction needs. Our mixers are built for heavy-duty use on site, ensuring consistent quality concrete. Available in electric and diesel variants.",
       "specs": [
         ["Drum Capacity", "200 L, 350 L, 500 L"],
         ["Power Options", "Electric / Diesel"],
@@ -66,7 +49,7 @@
         ["Drum Speed", "14–22 RPM"],
         ["Weight", "180 – 600 kg"]
       ],
-      "pills": ["sale", "rent"]
+      "pills": ["rent"]
     },
     {
       "id": 5,
@@ -83,7 +66,7 @@
         ["Speed", "5–14 RPM"],
         ["Power Supply", "415V, 3-phase"]
       ],
-      "pills": ["sale", "rent"]
+      "pills": ["sale", "service & spares"]
     },
     {
       "id": 6,
@@ -100,7 +83,7 @@
         ["Blade Type", "Hardened alloy steel"],
         ["Power Supply", "415V, 3-phase"]
       ],
-      "pills": ["sale", "rent"]
+      "pills": ["sale", "service & spares"]
     },
     {
       "id": 7,
@@ -121,23 +104,6 @@
     },
     {
       "id": 8,
-      "image": "assets/images/equipment/concrete-vibrator.jpg",
-      "tag": "Compaction",
-      "name": "Concrete Vibrator / Poker",
-      "short": "Immersion vibrators to remove air pockets and compact freshly poured concrete.",
-      "subtitle": "Petrol / Electric Immersion Vibrator",
-      "desc": "Concrete vibrators ensure proper compaction and eliminate voids and honeycombing in RCC structures. We offer internal (poker) vibrators with various needle diameters as well as surface vibrators and screed boards. Available in petrol, electric and pneumatic models.",
-      "specs": [
-        ["Needle Diameter", "25 mm, 40 mm, 60 mm"],
-        ["Frequency", "10,000–12,000 VPM"],
-        ["Power", "Petrol / Electric"],
-        ["Head Length", "300 – 500 mm"],
-        ["Application", "Columns, beams, slabs, foundations"]
-      ],
-      "pills": ["sale", "rent"]
-    },
-    {
-      "id": 9,
       "image": "assets/images/equipment/batching-plant.jpg",
       "tag": "Batching",
       "name": "Concrete Batching Plant",
