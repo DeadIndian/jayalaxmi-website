@@ -138,6 +138,7 @@ function closeMobile() {
 function submitForm(e) {
 	e.preventDefault();
 	const name = document.getElementById("fname").value;
+	const company = document.getElementById("fcompany").value;
 	const phone = document.getElementById("fphone").value;
 	const email = document.getElementById("femail").value;
 	const equip = document.getElementById("fequip").value;
@@ -151,6 +152,7 @@ function submitForm(e) {
 
 	const formData = {
 		name: name,
+		company: company || "Not provided",
 		phone: phone,
 		email: email || "Not provided",
 		equipment: equip,
@@ -173,7 +175,7 @@ function submitForm(e) {
 
 			const waMsg = encodeURIComponent(
 				`Hello Jayalaxmi Enterprises,\n\nNew enquiry from your website:\n\n` +
-					`*Name:* ${name}\n*Phone:* ${phone}\n*Equipment:* ${equip}\n*Requirement:* ${type}\n*Details:* ${msg || "—"}\n\nPlease get back to me. Thank you.`
+					`*Name:* ${name}\n*Company:* ${company || "—"}\n*Phone:* ${phone}\n*Equipment:* ${equip}\n*Requirement:* ${type}\n*Details:* ${msg || "—"}\n\nPlease get back to me. Thank you.`
 			);
 
 			setTimeout(() => {
