@@ -184,8 +184,8 @@ function submitForm(e) {
 			})
 			.then(async res => {
 				if (!res.ok) {
-					const errData = await res.json().catch(() => ({}));
-					console.warn("Backend notification failed:", errData);
+					const errText = await res.text();
+					console.warn(`Backend notification failed (Status: ${res.status}):`, errText);
 				} else {
 					console.log("Backend successfully triggered WhatsApp notification");
 				}
