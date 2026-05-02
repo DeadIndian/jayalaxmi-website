@@ -160,10 +160,11 @@ function submitForm(e) {
 		details: msg || "None"
 	};
 
-	fetch("https://formspree.io/f/xnjwqegb", {
+	// ─── SEND TO TELEGRAM BOT (SECURE BACKEND CALL) ───
+	// We send the data to a secure backend endpoint where the Telegram Bot Token is safely stored as an Environment Variable.
+	fetch("/api/send-telegram", {
 		method: "POST",
 		headers: {
-			"Accept": "application/json",
 			"Content-Type": "application/json"
 		},
 		body: JSON.stringify(formData)
@@ -172,31 +173,12 @@ function submitForm(e) {
 		if (response.ok) {
 			document.getElementById("form-success").style.display = "block";
 			document.getElementById("contactForm").reset();
-
-			// ─── AUTOMATIC WHATSAPP NOTIFICATION (SECURE BACKEND CALL) ───
-			// We send the data to a secure backend endpoint where the Meta API Token is safely stored as an Environment Variable.
-			fetch("/api/send-whatsapp", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({ name, company, phone, email, equip, type, msg })
-			})
-			.then(async res => {
-				if (!res.ok) {
-					const errText = await res.text();
-					console.warn(`Backend notification failed (Status: ${res.status}):`, errText);
-				} else {
-					console.log("Backend successfully triggered WhatsApp notification");
-				}
-			})
-			.catch(err => console.error("Error calling backend:", err));
 		} else {
-			alert("There was an error sending your enquiry. Please try again or contact us directly on WhatsApp.");
+			alert("There was an error sending your enquiry. Please try again or contact us directly.");
 		}
 	})
 	.catch(error => {
-		console.error("Formspree error:", error);
+		console.error("Error sending enquiry:", error);
 		alert("There was an error sending your enquiry. Please check your internet connection.");
 	})
 	.finally(() => {
