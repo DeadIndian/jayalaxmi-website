@@ -24,6 +24,7 @@ async function loadData() {
 
 		buildGrid();
 		buildReviews();
+		buildEquipmentDropdown();
 	} catch (error) {
 		console.error("Error loading data:", error);
 	}
@@ -131,6 +132,28 @@ function buildReviews() {
       </div>`;
 		track.appendChild(card);
 	});
+}
+
+function buildEquipmentDropdown() {
+	const select = document.getElementById("fequip");
+	if (!select) return;
+
+	// Clear existing options except the first one
+	select.innerHTML = '<option value="">— Select Equipment —</option>';
+
+	// Add options from equipmentData
+	equipmentData.forEach((eq) => {
+		const option = document.createElement("option");
+		option.value = eq.name;
+		option.textContent = eq.name;
+		select.appendChild(option);
+	});
+
+	// Add "Other / Not Listed" option at the end
+	const otherOption = document.createElement("option");
+	otherOption.value = "Other / Not Listed";
+	otherOption.textContent = "Other / Not Listed";
+	select.appendChild(otherOption);
 }
 
 // ─── HAMBURGER ───
