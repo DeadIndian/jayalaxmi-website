@@ -29,11 +29,13 @@
       "subtitle": "High-Capacity Material/Builder Hoist",
       "desc": "Our Builder Hoists are robust, safety-certified machines ideal for high-rise and multi-storey construction. They transport heavy materials — bricks, sand, steel — vertically with ease, reducing manual labour and saving time. Available in single-cage and twin-cage configurations.",
       "specs": [
-        ["Gross Load", "Up to 1,000 kg"],
+        ["Gross Load", "1,000 kg"],
         ["Net Load", "750 kg"],
-        ["Speed", "Up to 36 m/min"],
-        ["Power", "3-phase 415V"],
-        ["Safety", "Safety device, overload protection"]
+        ["Wire Rope", "12 mm"],
+        ["Speed", "30 - 35 mtr/min"],
+        ["Height", "40 Meters"],
+        ["Mast Section", "500mm x 400mm x 1.5mtr"],
+        ["Rectangle Bucket", "1250x800x610 mm"]
       ],
       "pills": ["sale", "rent", "service & spares"]
     },
@@ -84,10 +86,14 @@
       "subtitle": "Electric Mini Crane",
       "desc": "Mini cranes offer an ideal solution for lifting tasks in restricted spaces. With their compact size and excellent lifting capabilities, they are perfect for indoor operations, roofing, and structural steel erection.",
       "specs": [
-        ["Capacity", "Up to 1000 kg"],
-        ["Max Lifting Height", "30m"],
-        ["Power Supply", "220V / 415V"],
-        ["Rotation", "360 degrees"]
+        ["Lifting Capacity", "250 kg"],
+        ["Power", "2HP single-phase motor"],
+        ["Rope", "Steel wire rope"],
+        ["Rope Thickness", "8mm"],
+        ["Brake", "Electromagnetic"],
+        ["Rope height", "30mts"],
+        ["Rotation type", "360 degrees"],
+        ["Accessories", "hook Chain tools"]
       ],
       "pills": ["sale", "rent", "service & spares"]
     },
@@ -118,10 +124,10 @@
       "subtitle": "High-Capacity Tower Crane",
       "desc": "Tower cranes are essential for high-rise building projects, offering exceptional lifting heights and capacities. We supply top-slewing tower cranes that are robust, reliable, and equipped with the latest safety control systems.",
       "specs": [
-        ["Max Load", "5,000 kg - 10,000 kg"],
-        ["Jib Length", "50m - 60m"],
-        ["Tip Load", "1,000 kg - 1,500 kg"],
-        ["Max Height", "Up to 150m"]
+        ["Max Load", "5,000 kg"],
+        ["Jib Length", "55mtr"],
+        ["Tip Load", "1,000 kg"],
+        ["Max Height", "Up to 40mtr"]
       ],
       "pills": ["rent","service & spares"]
     },

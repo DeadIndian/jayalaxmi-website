@@ -1,3 +1,8 @@
+@font-face {
+				font-family: 'Reve';
+				src: url('assets/fonts/reve.ttf') format('truetype');
+}
+
 :root {
 				--red: #cc1f1f;
 				--blue: #1a3a8f;
@@ -40,7 +45,7 @@
 				align-items: center;
 				justify-content: space-between;
 				padding: 0 24px;
-				height: 64px;
+				height: 84px;
 				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 			}
 			.nav-brand {
@@ -64,26 +69,29 @@
 				letter-spacing: -1px;
 			}
 			.nav-title {
-				font-family: "Samarkan", sans-serif;
+				font-family: "Reve", sans-serif;
 				font-weight: normal;
 				color: var(--red);
-				font-size: 24px;
-				line-height: 1.2;
+				font-size: 38px;
+				line-height: 1;
 				letter-spacing: 1px;
 				text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+				display: flex;
+				flex-direction: column;
 			}
 			.nav-title span {
-				display: inline-block;
-				font-size: 9px;
+				display: block;
+				width: max-content;
+				font-size: 11px;
 				font-family: "Oswald", sans-serif;
 				font-weight: 600;
 				letter-spacing: 0.5px;
 				text-transform: uppercase;
 				background: var(--blue);
 				color: var(--white);
-				padding: 2px 8px;
+				padding: 3px 10px;
 				border-radius: 12px;
-				margin-top: 4px;
+				margin-top: -2px;
 				border: 1px solid rgba(255,255,255,0.3);
 			}
 			.nav-links {
@@ -137,7 +145,7 @@
 				flex-direction: column;
 				background: var(--blue);
 				position: fixed;
-				top: 64px;
+				top: 84px;
 				left: 0;
 				right: 0;
 				z-index: 899;
@@ -228,7 +236,7 @@
 			}
 
 			.hero h1 {
-				font-family: "Oswald",sans-serif;
+				font-family: "Reve", sans-serif;
 				font-weight: normal;
 				font-size: clamp(32px, 7vw, 64px);
 				color: var(--red);
@@ -1101,9 +1109,9 @@
 				font-size: 14px;
 			}
 			.footer-brand-name {
-				font-family: "Oswald", sans-serif;
+				font-family: "Reve", sans-serif;
 				font-weight: normal;
-				font-size: 20px;
+				font-size: 26px;
 				color: var(--red);
 				letter-spacing: 1px;
 			}
@@ -1231,7 +1239,7 @@
 			}
 
 /* Image replacement styles */
-.nav-logo-img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; }
+.nav-logo-img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
 .hero-logo-img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 28px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); position: relative; background: var(--white); z-index: 10; }
 .why-icon-img { width: 48px; height: 48px; margin-bottom: 14px; object-fit: contain; }
 .eq-img-tag { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
@@ -1240,4 +1248,4 @@
 .review-avatar-img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; }
 .about-icon { width: 24px; height: 24px; flex-shrink: 0; object-fit: contain; }
 .contact-icon-img { width: 24px; height: 24px; object-fit: contain; }
-.footer-logo-img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; background: var(--white); }
+.footer-logo-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: var(--white); }
