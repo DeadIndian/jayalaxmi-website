@@ -182,9 +182,13 @@ function submitForm(e) {
 				},
 				body: JSON.stringify({ name, company, phone, email, equip, type, msg })
 			})
-			.then(res => {
-				if (!res.ok) console.warn("Backend notification failed");
-				else console.log("Backend successfully triggered WhatsApp notification");
+			.then(async res => {
+				if (!res.ok) {
+					const errData = await res.json().catch(() => ({}));
+					console.warn("Backend notification failed:", errData);
+				} else {
+					console.log("Backend successfully triggered WhatsApp notification");
+				}
 			})
 			.catch(err => console.error("Error calling backend:", err));
 		} else {
