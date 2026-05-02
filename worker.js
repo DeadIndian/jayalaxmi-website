@@ -43,6 +43,7 @@ export default {
 					{
 						method: "POST",
 						headers: {
+							Authorization: `Bearer ${waToken}`,
 							"Content-Type": "application/json",
 						},
 						body: JSON.stringify(waPayload),
