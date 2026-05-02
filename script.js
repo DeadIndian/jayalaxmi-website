@@ -173,14 +173,20 @@ function submitForm(e) {
 			document.getElementById("form-success").style.display = "block";
 			document.getElementById("contactForm").reset();
 
-			const waMsg = encodeURIComponent(
-				`Hello Jayalaxmi Enterprises,\n\nNew enquiry from your website:\n\n` +
-					`*Name:* ${name}\n*Company:* ${company || "—"}\n*Phone:* ${phone}\n*Equipment:* ${equip}\n*Requirement:* ${type}\n*Details:* ${msg || "—"}\n\nPlease get back to me. Thank you.`
-			);
-
-			setTimeout(() => {
-				window.open(`https://wa.me/917702212693?text=${waMsg}`, "_blank");
-			}, 600);
+			// ─── AUTOMATIC WHATSAPP NOTIFICATION (SECURE BACKEND CALL) ───
+			// We send the data to a secure backend endpoint where the Meta API Token is safely stored as an Environment Variable.
+			fetch("/api/send-whatsapp", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({ name, company, phone, email, equip, type, msg })
+			})
+			.then(res => {
+				if (!res.ok) console.warn("Backend notification failed");
+				else console.log("Backend successfully triggered WhatsApp notification");
+			})
+			.catch(err => console.error("Error calling backend:", err));
 		} else {
 			alert("There was an error sending your enquiry. Please try again or contact us directly on WhatsApp.");
 		}
