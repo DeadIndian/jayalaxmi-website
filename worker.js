@@ -11,7 +11,7 @@ export default {
 
 				// Access secrets securely set via Wrangler or Dashboard
 				const botToken = env.TELEGRAM_BOT_TOKEN;
-				const chatId = env.TELEGRAM_CHAT_ID;
+				const chatId = parseInt(env.TELEGRAM_CHAT_ID, 10);
 
 				if (!botToken || !chatId) {
 					return new Response(
