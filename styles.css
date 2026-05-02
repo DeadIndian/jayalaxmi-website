@@ -919,6 +919,20 @@ section {
 	font-size: 16px;
 	color: var(--white);
 }
+.review-avatar-initials {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: var(--orange);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--white);
+	flex-shrink: 0;
+}
 .review-name {
 	font-weight: 600;
 	color: var(--white);

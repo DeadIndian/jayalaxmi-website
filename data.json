@@ -1,255 +1,269 @@
 {
-  "equipment": [
-    {
-      "id": 1,
-      "image": "assets/images/equipment/srp.jpg",
-      "modalImage": "assets/images/equipment/srp-detail.jpg",
-      "tag": "Access Platform",
-      "name": "Suspended Platform (Gondola)",
-      "short": "Rope-suspended work platform for exterior building maintenance and finishing.",
-      "subtitle": "Motorised Gondola / ZLP Platform",
-      "desc": "Suspended platforms (gondolas) are used for external building maintenance, glass cleaning, painting and plastering on finished high-rise structures. Our ZLP series gondolas are electrically powered with built-in safety locks and are CE-compliant.",
-      "specs": [
-        ["HANGING PLATFORM"],
-        ["Model", "ZLP800"],
-        ["Rated Capacity", "800Kgs"],
-        ["Hoist Speed", "8.2 M/min"],
-        ["Material", "Steel with Galvanized"],
-        ["Height", "100 Mtrs"],
-        ["Platform Dimension Length", "7500 MM"],
-        ["Platform Dimension Width", "690 MM"],
-        ["Platform Dimension Height", "1180 MM"],
-        ["Volume", "2.9 m³"],
-        ["SUSPENSION MECHANISM"],
-        ["Rated front beam overhang", "1300MM"],
-        ["Front beam Height", "1300-1800MM (Adjustable distance 100mm)"],
-        ["HOIST"],
-        ["Model", "LTD 8.0"],
-        ["Quantity", "2Unit"],
-        ["Electric Motor Model", "Y2-100L-4"],
-        ["Power", "1.8Kw"],
-        ["Voltage", "380V"],
-        ["Rotation speed", "1420n/Min"],
-        ["Braking Torque", "15 N-m"],
-        ["SAFETY LOCK"],
-        ["Model", "LST30"],
-        ["Quantity", "2 Nos."],
-        ["Permitted Force if impact", "30 KN"],
-        ["WIRE ROPE"],
-        ["Galvanized Steel Wire Rope Model", "4 x 31Fi+PP-ø9.1mm"],
-        ["Electrical Cable", "3 x 2.5 + 2 x 1.5YC - 5"],
-        ["COUNTER WEIGHT"],
-        ["Counter Weight", "25Kgs x 40Nos. {1000Kgs}"]
-      ],
-      "pills": ["sale", "rent", "service & spares"]
-    },
-    {
-      "id": 2,
-      "image": "assets/images/equipment/material-hoist.png",
-      "modalImage": "assets/images/equipment/material-hoist-detail.png",
-      "tag": "Hoist & Lift",
-      "name": "Material Hoist",
-      "short": "Heavy-duty vertical transport (ETB 1000 & ETB 1500) for materials on construction sites.",
-      "subtitle": "High-Capacity Material Hoist (ETB 1000 / ETB 1500)",
-      "desc": "Our Material Hoists (ETB 1000 and ETB 1500) are robust, state-of-the-art machines ideal for high-rise construction up to 125 meters. Built for reliability and safety, they feature an inbuilt mechanical locking system, power fail-safe brake motor, and transport heavy materials vertically with ease.",
-      "specs": [
-        ["TECHNICAL DATA (ETB 1000 / ETB 1500)"],
-        ["Gross Load", "1000 Kgs / 1500 Kgs"],
-        ["Net Load", "750 Kgs / 1200 Kgs"],
-        ["Wire Rope", "12 mm / 12 mm"],
-        ["Electric Motor", "10 HP / 12.5 HP"],
-        ["Speed", "30-35 Mtr/Min"],
-        ["Max Height", "125 Metres"],
-        ["Mast Section", "500 mm x 400 mm x1.5 mtr"],
-        ["Rectangle Bucket", "1250x800x610 mm / 1400x1000x500 mm"],
-        ["FEATURES"],
-        ["Design", "The state of art design"],
-        ["Safety", "Built in reliability & safety"],
-        ["Structure", "Sturdy & rugged structure"],
-        ["Protection", "Inbuilt mechanical locking system / free fall protection"],
-        ["Motor", "Power fail safe brake motor"],
-        ["Limit Switch", "Top & bottom limit switch with break motor hoist"],
-        ["Bucket Safety", "Mechanical safety device for bucket"],
-        ["Height", "Free standing height of 4.5 mtr above the roof height"],
-        ["OPTIONAL"],
-        ["Tie Options", "Scaffolding or wall tie"],
-        ["Bucket", "Interchangeable bucket"],
-        ["Bucket Options", "Tilting / Rectangular"],
-        ["Re-bar Carrier", "Vertical carrier / Horizontal carrier - 7 Mtr & 9 Mtrs (500Kgs)"],
-        ["Add-ons", "Floor selection, Erection crane, Foundation type"]
-      ],
-      "pills": ["sale", "rent", "service & spares"]
-    },
-    {
-      "id": 3,
-      "image": "assets/images/equipment/bar-bending.jpg",
-      "modalImage": "assets/images/equipment/bar-bending-detail.jpg",
-      "tag": "Steel Work",
-      "name": "Bar Bending Machine",
-      "short": "Electrically operated machine to bend TMT steel bars up to 40 mm.",
-      "subtitle": "Electric Bar Bending Machine",
-      "desc": "Bar bending machines are essential for any RCC structure. Our machines handle TMT bars from 6 mm to 40 mm with precision angle settings. They are built for heavy-duty continuous use on large construction sites and are available for both sale and rent.",
-      "specs": [
-        ["Bar Diameter", "6 mm – 40 mm"],
-        ["Bending Angle", "0° – 180°"],
-        ["Motor Power", "2.2 kW – 5.5 kW"],
-        ["Speed", "5–14 RPM"],
-        ["Power Supply", "415V, 3-phase"]
-      ],
-      "pills": ["sale", "service & spares"]
-    },
-    {
-      "id": 4,
-      "image": "assets/images/equipment/bar-cutting.jpg",
-      "modalImage": "assets/images/equipment/bar-cutting-detail.jpg",
-      "tag": "Steel Work",
-      "name": "Bar Cutting Machine",
-      "short": "Heavy-duty machine for cutting TMT reinforcement bars accurately on site.",
-      "subtitle": "Electric Bar Cutting Machine",
-      "desc": "Our bar cutting machines provide clean, accurate cuts on TMT reinforcement bars in seconds. With a robust cast-iron body and high-torque motor, they handle bars up to 40 mm diameter. Portable models also available for smaller sites.",
-      "specs": [
-        ["Bar Diameter", "Up to 40 mm"],
-        ["Cutting Speed", "28 cuts/min"],
-        ["Motor Power", "3 kW – 5.5 kW"],
-        ["Blade Type", "Hardened alloy steel"],
-        ["Power Supply", "415V, 3-phase"]
-      ],
-      "pills": ["sale", "service & spares"]
-    },
-    
-    {
-      "id": 5,
-      "image": "assets/images/equipment/mini-crane.jpg",
-      "modalImage": "assets/images/equipment/mini-crane-detail.jpg",
-      "tag": "Crane",
-      "name": "Mini Crane",
-      "short": "Compact crane for lifting materials on construction sites and tight spaces.",
-      "subtitle": "Electric Mini Crane",
-      "desc": "Mini cranes offer an ideal solution for lifting tasks in restricted spaces. With their compact size and excellent lifting capabilities, they are perfect for indoor operations, roofing, and structural steel erection.",
-      "specs": [
-        ["Lifting Capacity", "250 kg"],
-        ["Power", "2HP single-phase motor"],
-        ["Rope", "Steel wire rope"],
-        ["Rope Thickness", "8mm"],
-        ["Brake", "Electromagnetic"],
-        ["Rope height", "30mts"],
-        ["Rotation type", "360 degrees"],
-        ["Accessories", "hook Chain tools"]
-      ],
-      "pills": ["sale", "rent", "service & spares"]
-    },
-    {
-      "id": 6,
-      "image": "assets/images/equipment/passenger-hoist.jpg",
-      "modalImage": "assets/images/equipment/passenger-hoist-detail.jpg",
-      "tag": "Hoist & Lift",
-      "name": "Passenger Hoist",
-      "short": "Safe and efficient vertical transportation for personnel and materials.",
-      "subtitle": "Construction Passenger Hoist",
-      "desc": "Designed for high-rise construction, our passenger hoists transport workers and materials quickly and safely to upper floors. They feature variable frequency drives for smooth starts and stops, and multiple safety mechanisms.",
-      "specs": [
-        ["Capacity", "1000 kg - 2000 kg"],
-        ["Passengers", "10 - 20 persons"],
-        ["Speed", "Up to 40 m/min"],
-        ["Power Supply", "415V, 3-phase"]
-      ],
-      "pills": ["sale", "rent", "service & spares"]
-    },
-    {
-      "id": 7,
-      "image": "assets/images/equipment/tower-crane.jpg",
-      "modalImage": "assets/images/equipment/tower-crane-detail.jpg",
-      "tag": "Crane",
-      "name": "Tower Crane",
-      "short": "Heavy-duty lifting equipment for major construction and high-rise projects.",
-      "subtitle": "High-Capacity Tower Crane",
-      "desc": "Tower cranes are essential for high-rise building projects, offering exceptional lifting heights and capacities. We supply top-slewing tower cranes that are robust, reliable, and equipped with the latest safety control systems.",
-      "specs": [
-        ["Max Load", "5,000 kg"],
-        ["Jib Length", "55mtr"],
-        ["Tip Load", "1,000 kg"],
-        ["Max Height", "Up to 40mtr"]
-      ],
-      "pills": ["rent","service & spares"]
-    },
-    {
-      "id": 8,
-      "image": "assets/images/equipment/rmc.png",
-      "modalImage": "assets/images/equipment/rmc.png",
-      "tag": "Concrete Mixing",
-      "name": "RMC Plant",
-      "short": "Pre-assembled batching plant (56 cu.m/hr) that can be quickly moved on low bed semi-trailers.",
-      "subtitle": "M1 Pre-assembled Batching Plant",
-      "desc": "The M1 pre-assembled batching plant can be quickly moved on low bed semi-trailers. It provides a 56 cu.m/hr output equipped with a Stetter Pan mixer or Stetter Twin shaft mixer. Inline silo or compartment batcher options are available for aggregate storage. It includes MCI 370 and MCI 460 control systems with SCADA software featuring numerous functions.",
-      "specs": [
-        ["OUTPUT", "56 m³/hr"],
-        ["OPERATING VOLTAGE", "415 V"],
-        ["TYPE", "MCI550"],
-        ["MIXER TYPE", "PAN / TWIN SHAFT"],
-        ["MAX. GRAIN SIZE", "45 / 63 mm"],
-        ["AGGREGATE WEIGHING CAPACITY", "2500 kg"],
-        ["CEMENT WEIGHING CAPACITY", "700 / 750 kg"],
-        ["WATER WEIGHING CAPACITY", "250 / 375 kg"]
-      ],
-      "pills": ["rent", "service & spares"]
-    }
-  ],
-  "reviews": [
-    {
-      "name": "Suresh Reddy",
-      "role": "Civil Contractor, Hyderabad",
-      "stars": 5,
-      "text": "Excellent quality hoists. Taken on rent for 6 months and they never gave us a single problem. The service team is very responsive.",
-      "image": "assets/images/customers/suresh.jpg"
-    },
-    {
-      "name": "Anil Kumar",
-      "role": "Builder, LB Nagar",
-      "stars": 5,
-      "text": "I purchased a bar bending machine and bar cutter from them. Very good prices and the machines are working perfectly even after 2 years.",
-      "image": "assets/images/customers/anil.jpg"
-    },
-    {
-      "name": "Rajesh Verma",
-      "role": "Project Manager, Uppal",
-      "stars": 4,
-      "text": "Good range of equipment. Rented a concrete pump for our high-rise project. Smooth coordination and on-time delivery to site.",
-      "image": "assets/images/customers/rajesh.jpg"
-    },
-    {
-      "name": "Venkat Rao",
-      "role": "Contractor, Kukatpally",
-      "stars": 5,
-      "text": "Been buying from Jayalaxmi for years. Very trustworthy. If there is ever a breakdown, they send a technician the same day.",
-      "image": "assets/images/customers/venkat.jpg"
-    },
-    {
-      "name": "Mohammad Farhan",
-      "role": "Developer, Shamshabad",
-      "stars": 5,
-      "text": "The gondola platforms they supplied are excellent quality. Workers feel safe and the support from the team is outstanding.",
-      "image": "assets/images/customers/farhan.jpg"
-    },
-    {
-      "name": "Prasad Nair",
-      "role": "Site Engineer, Gachibowli",
-      "stars": 4,
-      "text": "Prompt delivery, good condition equipment. Would have given 5 stars but one mixer needed minor adjustment on first day. Otherwise no issues.",
-      "image": "assets/images/customers/prasad.jpg"
-    },
-    {
-      "name": "Srinivas Rao",
-      "role": "Contractor, Medchal",
-      "stars": 5,
-      "text": "Very professional. They explained everything about the mast climbing platform and gave us training too. Highly recommended.",
-      "image": "assets/images/customers/srinivas.jpg"
-    },
-    {
-      "name": "Kiran Babu",
-      "role": "Civil Engineer, Miyapur",
-      "stars": 5,
-      "text": "Competitive pricing compared to other vendors in Hyderabad. Equipment is always in good maintained condition. Great after-sales too.",
-      "image": "assets/images/customers/kiran.jpg"
-    }
-  ]
+	"equipment": [
+		{
+			"id": 1,
+			"image": "assets/images/equipment/srp.jpg",
+			"modalImage": "assets/images/equipment/srp-detail.jpg",
+			"tag": "Access Platform",
+			"name": "Suspended Platform (Gondola)",
+			"short": "Rope-suspended work platform for exterior building maintenance and finishing.",
+			"subtitle": "Motorised Gondola / ZLP Platform",
+			"desc": "Suspended platforms (gondolas) are used for external building maintenance, glass cleaning, painting and plastering on finished high-rise structures. Our ZLP series gondolas are electrically powered with built-in safety locks and are CE-compliant.",
+			"specs": [
+				["HANGING PLATFORM"],
+				["Model", "ZLP800"],
+				["Rated Capacity", "800Kgs"],
+				["Hoist Speed", "8.2 M/min"],
+				["Material", "Steel with Galvanized"],
+				["Height", "100 Mtrs"],
+				["Platform Dimension Length", "7500 MM"],
+				["Platform Dimension Width", "690 MM"],
+				["Platform Dimension Height", "1180 MM"],
+				["Volume", "2.9 m³"],
+				["SUSPENSION MECHANISM"],
+				["Rated front beam overhang", "1300MM"],
+				["Front beam Height", "1300-1800MM (Adjustable distance 100mm)"],
+				["HOIST"],
+				["Model", "LTD 8.0"],
+				["Quantity", "2Unit"],
+				["Electric Motor Model", "Y2-100L-4"],
+				["Power", "1.8Kw"],
+				["Voltage", "380V"],
+				["Rotation speed", "1420n/Min"],
+				["Braking Torque", "15 N-m"],
+				["SAFETY LOCK"],
+				["Model", "LST30"],
+				["Quantity", "2 Nos."],
+				["Permitted Force if impact", "30 KN"],
+				["WIRE ROPE"],
+				["Galvanized Steel Wire Rope Model", "4 x 31Fi+PP-ø9.1mm"],
+				["Electrical Cable", "3 x 2.5 + 2 x 1.5YC - 5"],
+				["COUNTER WEIGHT"],
+				["Counter Weight", "25Kgs x 40Nos. {1000Kgs}"]
+			],
+			"pills": ["sale", "rent", "service & spares"]
+		},
+		{
+			"id": 2,
+			"image": "assets/images/equipment/material-hoist.png",
+			"modalImage": "assets/images/equipment/material-hoist-detail.png",
+			"tag": "Hoist & Lift",
+			"name": "Material Hoist",
+			"short": "Heavy-duty vertical transport (ETB 1000 & ETB 1500) for materials on construction sites.",
+			"subtitle": "High-Capacity Material Hoist (ETB 1000 / ETB 1500)",
+			"desc": "Our Material Hoists (ETB 1000 and ETB 1500) are robust, state-of-the-art machines ideal for high-rise construction up to 125 meters. Built for reliability and safety, they feature an inbuilt mechanical locking system, power fail-safe brake motor, and transport heavy materials vertically with ease.",
+			"specs": [
+				["TECHNICAL DATA (ETB 1000 / ETB 1500)"],
+				["Gross Load", "1000 Kgs / 1500 Kgs"],
+				["Net Load", "750 Kgs / 1200 Kgs"],
+				["Wire Rope", "12 mm / 12 mm"],
+				["Electric Motor", "10 HP / 12.5 HP"],
+				["Speed", "30-35 Mtr/Min"],
+				["Max Height", "125 Metres"],
+				["Mast Section", "500 mm x 400 mm x1.5 mtr"],
+				["Rectangle Bucket", "1250x800x610 mm / 1400x1000x500 mm"],
+				["FEATURES"],
+				["Design", "The state of art design"],
+				["Safety", "Built in reliability & safety"],
+				["Structure", "Sturdy & rugged structure"],
+				[
+					"Protection",
+					"Inbuilt mechanical locking system / free fall protection"
+				],
+				["Motor", "Power fail safe brake motor"],
+				["Limit Switch", "Top & bottom limit switch with break motor hoist"],
+				["Bucket Safety", "Mechanical safety device for bucket"],
+				["Height", "Free standing height of 4.5 mtr above the roof height"],
+				["OPTIONAL"],
+				["Tie Options", "Scaffolding or wall tie"],
+				["Bucket", "Interchangeable bucket"],
+				["Bucket Options", "Tilting / Rectangular"],
+				[
+					"Re-bar Carrier",
+					"Vertical carrier / Horizontal carrier - 7 Mtr & 9 Mtrs (500Kgs)"
+				],
+				["Add-ons", "Floor selection, Erection crane, Foundation type"]
+			],
+			"pills": ["sale", "rent", "service & spares"]
+		},
+		{
+			"id": 3,
+			"image": "assets/images/equipment/bar-bending.jpg",
+			"modalImage": "assets/images/equipment/bar-bending-detail.jpg",
+			"tag": "Steel Work",
+			"name": "Bar Bending Machine",
+			"short": "Electrically operated machine to bend TMT steel bars up to 40 mm.",
+			"subtitle": "Electric Bar Bending Machine",
+			"desc": "Bar bending machines are essential for any RCC structure. Our machines handle TMT bars from 6 mm to 40 mm with precision angle settings. They are built for heavy-duty continuous use on large construction sites and are available for both sale and rent.",
+			"specs": [
+				["Bar Diameter", "6 mm – 40 mm"],
+				["Bending Angle", "0° – 180°"],
+				["Motor Power", "2.2 kW – 5.5 kW"],
+				["Speed", "5–14 RPM"],
+				["Power Supply", "415V, 3-phase"]
+			],
+			"pills": ["sale", "service & spares"]
+		},
+		{
+			"id": 4,
+			"image": "assets/images/equipment/bar-cutting.jpg",
+			"modalImage": "assets/images/equipment/bar-cutting-detail.jpg",
+			"tag": "Steel Work",
+			"name": "Bar Cutting Machine",
+			"short": "Heavy-duty machine for cutting TMT reinforcement bars accurately on site.",
+			"subtitle": "Electric Bar Cutting Machine",
+			"desc": "Our bar cutting machines provide clean, accurate cuts on TMT reinforcement bars in seconds. With a robust cast-iron body and high-torque motor, they handle bars up to 40 mm diameter. Portable models also available for smaller sites.",
+			"specs": [
+				["Bar Diameter", "Up to 40 mm"],
+				["Cutting Speed", "28 cuts/min"],
+				["Motor Power", "3 kW – 5.5 kW"],
+				["Blade Type", "Hardened alloy steel"],
+				["Power Supply", "415V, 3-phase"]
+			],
+			"pills": ["sale", "service & spares"]
+		},
+
+		{
+			"id": 5,
+			"image": "assets/images/equipment/mini-crane.jpg",
+			"modalImage": "assets/images/equipment/mini-crane-detail.jpg",
+			"tag": "Crane",
+			"name": "Mini Crane",
+			"short": "Compact crane for lifting materials on construction sites and tight spaces.",
+			"subtitle": "Electric Mini Crane",
+			"desc": "Mini cranes offer an ideal solution for lifting tasks in restricted spaces. With their compact size and excellent lifting capabilities, they are perfect for indoor operations, roofing, and structural steel erection.",
+			"specs": [
+				["Lifting Capacity", "250 kg"],
+				["Power", "2HP single-phase motor"],
+				["Rope", "Steel wire rope"],
+				["Rope Thickness", "8mm"],
+				["Brake", "Electromagnetic"],
+				["Rope height", "30mts"],
+				["Rotation type", "360 degrees"],
+				["Accessories", "hook Chain tools"]
+			],
+			"pills": ["sale", "rent", "service & spares"]
+		},
+		{
+			"id": 6,
+			"image": "assets/images/equipment/passenger-hoist.jpg",
+			"modalImage": "assets/images/equipment/passenger-hoist-detail.jpg",
+			"tag": "Hoist & Lift",
+			"name": "Passenger Hoist",
+			"short": "Safe and efficient vertical transportation for personnel and materials.",
+			"subtitle": "Construction Passenger Hoist",
+			"desc": "Designed for high-rise construction, our passenger hoists transport workers and materials quickly and safely to upper floors. They feature variable frequency drives for smooth starts and stops, and multiple safety mechanisms.",
+			"specs": [
+				["Capacity", "1000 kg - 2000 kg"],
+				["Passengers", "10 - 20 persons"],
+				["Speed", "Up to 40 m/min"],
+				["Power Supply", "415V, 3-phase"]
+			],
+			"pills": ["sale", "rent", "service & spares"]
+		},
+		{
+			"id": 7,
+			"image": "assets/images/equipment/tower-crane.jpg",
+			"modalImage": "assets/images/equipment/tower-crane-detail.jpg",
+			"tag": "Crane",
+			"name": "Tower Crane",
+			"short": "Heavy-duty lifting equipment for major construction and high-rise projects.",
+			"subtitle": "High-Capacity Tower Crane",
+			"desc": "Tower cranes are essential for high-rise building projects, offering exceptional lifting heights and capacities. We supply top-slewing tower cranes that are robust, reliable, and equipped with the latest safety control systems.",
+			"specs": [
+				["Max Load", "5,000 kg"],
+				["Jib Length", "55mtr"],
+				["Tip Load", "1,000 kg"],
+				["Max Height", "Up to 40mtr"]
+			],
+			"pills": ["rent", "service & spares"]
+		},
+		{
+			"id": 8,
+			"image": "assets/images/equipment/rmc.png",
+			"modalImage": "assets/images/equipment/rmc.png",
+			"tag": "Concrete Mixing",
+			"name": "RMC Plant",
+			"short": "Pre-assembled batching plant (56 cu.m/hr) that can be quickly moved on low bed semi-trailers.",
+			"subtitle": "M1 Pre-assembled Batching Plant",
+			"desc": "The M1 pre-assembled batching plant can be quickly moved on low bed semi-trailers. It provides a 56 cu.m/hr output equipped with a Stetter Pan mixer or Stetter Twin shaft mixer. Inline silo or compartment batcher options are available for aggregate storage. It includes MCI 370 and MCI 460 control systems with SCADA software featuring numerous functions.",
+			"specs": [
+				["OUTPUT", "56 m³/hr"],
+				["OPERATING VOLTAGE", "415 V"],
+				["TYPE", "MCI550"],
+				["MIXER TYPE", "PAN / TWIN SHAFT"],
+				["MAX. GRAIN SIZE", "45 / 63 mm"],
+				["AGGREGATE WEIGHING CAPACITY", "2500 kg"],
+				["CEMENT WEIGHING CAPACITY", "700 / 750 kg"],
+				["WATER WEIGHING CAPACITY", "250 / 375 kg"]
+			],
+			"pills": ["rent", "service & spares"]
+		}
+	],
+	"reviews": [
+		{
+			"name": "Suresh Reddy",
+			"role": "Civil Contractor, Hyderabad",
+			"stars": 5,
+			"text": "Excellent quality hoists. Taken on rent for 6 months and they never gave us a single problem. The service team is very responsive.",
+			"image": null,
+			"_originalImage": "assets/images/customers/suresh.jpg"
+		},
+		{
+			"name": "Anil Kumar",
+			"role": "Builder, LB Nagar",
+			"stars": 5,
+			"text": "I purchased a bar bending machine and bar cutter from them. Very good prices and the machines are working perfectly even after 2 years.",
+			"image": null,
+			"_originalImage": "assets/images/customers/anil.jpg"
+		},
+		{
+			"name": "Rajesh Verma",
+			"role": "Project Manager, Uppal",
+			"stars": 4,
+			"text": "Good range of equipment. Rented a concrete pump for our high-rise project. Smooth coordination and on-time delivery to site.",
+			"image": null,
+			"_originalImage": "assets/images/customers/rajesh.jpg"
+		},
+		{
+			"name": "Venkat Rao",
+			"role": "Contractor, Kukatpally",
+			"stars": 5,
+			"text": "Been buying from Jayalaxmi for years. Very trustworthy. If there is ever a breakdown, they send a technician the same day.",
+			"image": null,
+			"_originalImage": "assets/images/customers/venkat.jpg"
+		},
+		{
+			"name": "Mohammad Farhan",
+			"role": "Developer, Shamshabad",
+			"stars": 5,
+			"text": "The gondola platforms they supplied are excellent quality. Workers feel safe and the support from the team is outstanding.",
+			"image": null,
+			"_originalImage": "assets/images/customers/farhan.jpg"
+		},
+		{
+			"name": "Prasad Nair",
+			"role": "Site Engineer, Gachibowli",
+			"stars": 4,
+			"text": "Prompt delivery, good condition equipment. Would have given 5 stars but one mixer needed minor adjustment on first day. Otherwise no issues.",
+			"image": null,
+			"_originalImage": "assets/images/customers/prasad.jpg"
+		},
+		{
+			"name": "Srinivas Rao",
+			"role": "Contractor, Medchal",
+			"stars": 5,
+			"text": "Very professional. They explained everything about the mast climbing platform and gave us training too. Highly recommended.",
+			"image": null,
+			"_originalImage": "assets/images/customers/srinivas.jpg"
+		},
+		{
+			"name": "Kiran Babu",
+			"role": "Civil Engineer, Miyapur",
+			"stars": 5,
+			"text": "Competitive pricing compared to other vendors in Hyderabad. Equipment is always in good maintained condition. Great after-sales too.",
+			"image": null,
+			"_originalImage": "assets/images/customers/kiran.jpg"
+		}
+	]
 }

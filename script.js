@@ -62,22 +62,17 @@ function openModal(eq) {
 
 	const pillsEl = document.getElementById("modalPills");
 	pillsEl.innerHTML = eq.pills
-		.map(
-			(p) =>
-				`<span class="eq-pill ${pillClass[p]}">${pillLabel[p]}</span>`,
-		)
+		.map((p) => `<span class="eq-pill ${pillClass[p]}">${pillLabel[p]}</span>`)
 		.join("");
 
 	const specsEl = document.getElementById("modalSpecs");
 	specsEl.innerHTML = eq.specs
-		.map(
-			([k, v]) => {
-				if (v === undefined || v === null) {
-					return `<div class="spec-header" style="font-weight: 700; color: var(--blue); padding: 8px 0 4px; margin-top: 10px; border-bottom: 2px solid var(--border); font-family: 'Oswald', sans-serif; letter-spacing: 0.5px;">${k}</div>`;
-				}
-				return `<div class="spec-row"><span class="spec-key">${k}</span><span class="spec-val">${v}</span></div>`;
+		.map(([k, v]) => {
+			if (v === undefined || v === null) {
+				return `<div class="spec-header" style="font-weight: 700; color: var(--blue); padding: 8px 0 4px; margin-top: 10px; border-bottom: 2px solid var(--border); font-family: 'Oswald', sans-serif; letter-spacing: 0.5px;">${k}</div>`;
 			}
-		)
+			return `<div class="spec-row"><span class="spec-key">${k}</span><span class="spec-val">${v}</span></div>`;
+		})
 		.join("");
 
 	const msg = encodeURIComponent(
@@ -110,11 +105,25 @@ function buildReviews() {
 	[...reviewsData, ...reviewsData].forEach((r) => {
 		const card = document.createElement("div");
 		card.className = "review-card";
+
+		// Generate initials from name
+		const initials = r.name
+			.split(" ")
+			.map((n) => n[0])
+			.join("")
+			.toUpperCase()
+			.slice(0, 2);
+
+		// Use initials avatar if image is null, otherwise use the image
+		const avatarHtml = r.image
+			? `<img src="${r.image}" alt="${r.name}" class="review-avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="review-avatar-initials" style="display:none;">${initials}</div>`
+			: `<div class="review-avatar-initials">${initials}</div>`;
+
 		card.innerHTML = `
       <div class="review-stars">${"★".repeat(r.stars)}${"☆".repeat(5 - r.stars)}</div>
       <p class="review-text">"${r.text}"</p>
       <div class="review-author">
-        <img src="${r.image}" alt="${r.name}" class="review-avatar-img" onerror="this.src='https://via.placeholder.com/42?text=${r.name[0]}'">
+        ${avatarHtml}
         <div>
           <div class="review-name">${r.name}</div>
           <div class="review-role">${r.role}</div>
@@ -157,58 +166,75 @@ function submitForm(e) {
 		email: email || "Not provided",
 		equipment: equip,
 		requirement: type,
-		details: msg || "None"
+		details: msg || "None",
 	};
 
 	fetch("https://formspree.io/f/xnjwqegb", {
 		method: "POST",
 		headers: {
-			"Accept": "application/json",
-			"Content-Type": "application/json"
+			Accept: "application/json",
+			"Content-Type": "application/json",
 		},
-		body: JSON.stringify(formData)
+		body: JSON.stringify(formData),
 	})
-	.then(response => {
-		if (response.ok) {
-			document.getElementById("form-success").style.display = "block";
-			document.getElementById("contactForm").reset();
+		.then((response) => {
+			if (response.ok) {
+				document.getElementById("form-success").style.display = "block";
+				document.getElementById("contactForm").reset();
 
-			// ─── AUTOMATIC WHATSAPP NOTIFICATION (SECURE BACKEND CALL) ───
-			// We send the data to a secure backend endpoint where the Meta API Token is safely stored as an Environment Variable.
-			fetch("/api/send-whatsapp", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({ name, company, phone, email, equip, type, msg })
-			})
-			.then(async res => {
-				if (!res.ok) {
-					const errText = await res.text();
-					console.warn(`Backend notification failed (Status: ${res.status}):`, errText);
-				} else {
-					console.log("Backend successfully triggered WhatsApp notification");
-				}
-			})
-			.catch(err => console.error("Error calling backend:", err));
-		} else {
-			alert("There was an error sending your enquiry. Please try again or contact us directly on WhatsApp.");
-		}
-	})
-	.catch(error => {
-		console.error("Formspree error:", error);
-		alert("There was an error sending your enquiry. Please check your internet connection.");
-	})
-	.finally(() => {
-		submitBtn.textContent = originalText;
-		submitBtn.disabled = false;
-	});
+				// ─── AUTOMATIC WHATSAPP NOTIFICATION (SECURE BACKEND CALL) ───
+				// We send the data to a secure backend endpoint where the Meta API Token is safely stored as an Environment Variable.
+				fetch("/api/send-whatsapp", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						name,
+						company,
+						phone,
+						email,
+						equip,
+						type,
+						msg,
+					}),
+				})
+					.then(async (res) => {
+						if (!res.ok) {
+							const errText = await res.text();
+							console.warn(
+								`Backend notification failed (Status: ${res.status}):`,
+								errText,
+							);
+						} else {
+							console.log(
+								"Backend successfully triggered WhatsApp notification",
+							);
+						}
+					})
+					.catch((err) => console.error("Error calling backend:", err));
+			} else {
+				alert(
+					"There was an error sending your enquiry. Please try again or contact us directly on WhatsApp.",
+				);
+			}
+		})
+		.catch((error) => {
+			console.error("Formspree error:", error);
+			alert(
+				"There was an error sending your enquiry. Please check your internet connection.",
+			);
+		})
+		.finally(() => {
+			submitBtn.textContent = originalText;
+			submitBtn.disabled = false;
+		});
 }
 
 // Load data when DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
 	loadData();
-	if (typeof lucide !== 'undefined') {
+	if (typeof lucide !== "undefined") {
 		lucide.createIcons();
 	}
 });
