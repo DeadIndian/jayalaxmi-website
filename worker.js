@@ -11,12 +11,42 @@ export default {
 
 				// Access secrets securely set via Wrangler or Dashboard
 				const botToken = env.TELEGRAM_BOT_TOKEN;
-				const chatId = parseInt(env.TELEGRAM_CHAT_ID, 10);
+				const chatId = env.TELEGRAM_CHAT_ID;
+
+				// Debug logging
+				console.log("Environment variables check:", {
+					hasToken: !!botToken,
+					hasChat: !!chatId,
+					tokenType: typeof botToken,
+					chatType: typeof chatId,
+				});
 
 				if (!botToken || !chatId) {
+					console.error("Missing environment variables", {
+						botToken: botToken ? "present" : "MISSING",
+						chatId: chatId ? "present" : "MISSING",
+					});
 					return new Response(
 						JSON.stringify({
 							error: "Server misconfiguration: Missing environment variables",
+							debug: {
+								botToken: botToken ? "present" : "MISSING",
+								chatId: chatId ? "present" : "MISSING",
+							},
+						}),
+						{
+							status: 500,
+							headers: { "Content-Type": "application/json" },
+						},
+					);
+				}
+
+				const chatIdNum = parseInt(chatId, 10);
+				if (isNaN(chatIdNum)) {
+					console.error("Invalid chat ID format:", chatId);
+					return new Response(
+						JSON.stringify({
+							error: "Invalid TELEGRAM_CHAT_ID format (must be a number)",
 						}),
 						{
 							status: 500,
@@ -28,7 +58,7 @@ export default {
 				const message = `<b>🔔 New Website Enquiry</b>\n\n<b>Name:</b> ${name}\n<b>Company:</b> ${company}\n<b>Phone:</b> ${phone}\n<b>Email:</b> ${email}\n<b>Equipment:</b> ${equipment}\n<b>Requirement:</b> ${requirement}\n<b>Details:</b> ${details}`;
 
 				const telegramPayload = {
-					chat_id: chatId,
+					chat_id: chatIdNum,
 					text: message,
 					parse_mode: "HTML",
 				};
