@@ -155,9 +155,9 @@ function submitForm(e) {
 		details: msg || "None",
 	};
 
-	// ─── SEND TO TELEGRAM BOT (SECURE BACKEND CALL) ───
-	// We send the data to a secure backend endpoint where the Telegram Bot Token is safely stored as an Environment Variable.
-	fetch("/api/send-telegram", {
+	// ─── SEND TO WHATSAPP (SECURE BACKEND CALL) ───
+	// We send the data to a secure backend endpoint where the WhatsApp credentials are safely stored as Environment Variables.
+	fetch("/api/send-whatsapp", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -170,7 +170,7 @@ function submitForm(e) {
 				document.getElementById("contactForm").reset();
 			} else {
 				alert(
-					"There was an error sending your enquiry. Please try again or contact us directly.",
+					"There was an error sending your enquiry. Please try again or contact us directly on WhatsApp.",
 				);
 			}
 		})

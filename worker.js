@@ -2,37 +2,21 @@ export default {
 	async fetch(request, env, ctx) {
 		const url = new URL(request.url);
 
-		// Handle Telegram API endpoint
-		if (url.pathname === "/api/send-telegram" && request.method === "POST") {
+		// Handle WhatsApp API endpoint
+		if (url.pathname === "/api/send-whatsapp" && request.method === "POST") {
 			try {
 				const body = await request.json();
-				const { name, company, phone, email, equipment, requirement, details } =
-					body;
+				const { name, company, phone, email, equip, type, msg } = body;
 
 				// Access secrets securely set via Wrangler or Dashboard
-				const botToken = env.TELEGRAM_BOT_TOKEN;
-				const chatId = env.TELEGRAM_CHAT_ID;
+				const waPhoneId = env.WA_PHONE_ID;
+				const waToken = env.WA_ACCESS_TOKEN;
+				const waRecipient = env.WA_RECIPIENT_NUMBER;
 
-				// Debug logging
-				console.log("Environment variables check:", {
-					hasToken: !!botToken,
-					hasChat: !!chatId,
-					tokenType: typeof botToken,
-					chatType: typeof chatId,
-				});
-
-				if (!botToken || !chatId) {
-					console.error("Missing environment variables", {
-						botToken: botToken ? "present" : "MISSING",
-						chatId: chatId ? "present" : "MISSING",
-					});
+				if (!waPhoneId || !waToken || !waRecipient) {
 					return new Response(
 						JSON.stringify({
 							error: "Server misconfiguration: Missing environment variables",
-							debug: {
-								botToken: botToken ? "present" : "MISSING",
-								chatId: chatId ? "present" : "MISSING",
-							},
 						}),
 						{
 							status: 500,
@@ -41,46 +25,37 @@ export default {
 					);
 				}
 
-				const chatIdNum = parseInt(chatId, 10);
-				if (isNaN(chatIdNum)) {
-					console.error("Invalid chat ID format:", chatId);
-					return new Response(
-						JSON.stringify({
-							error: "Invalid TELEGRAM_CHAT_ID format (must be a number)",
-						}),
-						{
-							status: 500,
-							headers: { "Content-Type": "application/json" },
-						},
-					);
-				}
+				const waMessageBody = `*New Website Enquiry!*\n\n*Name:* ${name}\n*Company:* ${company || "—"}\n*Phone:* ${phone}\n*Email:* ${email}\n*Equipment:* ${equip}\n*Requirement:* ${type}\n*Details:* ${msg || "—"}`;
 
-				const message = `<b>🔔 New Website Enquiry</b>\n\n<b>Name:</b> ${name}\n<b>Company:</b> ${company}\n<b>Phone:</b> ${phone}\n<b>Email:</b> ${email}\n<b>Equipment:</b> ${equipment}\n<b>Requirement:</b> ${requirement}\n<b>Details:</b> ${details}`;
-
-				const telegramPayload = {
-					chat_id: chatIdNum,
-					text: message,
-					parse_mode: "HTML",
+				const waPayload = {
+					messaging_product: "whatsapp",
+					recipient_type: "individual",
+					to: waRecipient,
+					type: "text",
+					text: {
+						preview_url: false,
+						body: waMessageBody,
+					},
 				};
 
-				const telegramResponse = await fetch(
-					`https://api.telegram.org/bot${botToken}/sendMessage`,
+				const waResponse = await fetch(
+					`https://graph.facebook.com/v20.0/${waPhoneId}/messages`,
 					{
 						method: "POST",
 						headers: {
 							"Content-Type": "application/json",
 						},
-						body: JSON.stringify(telegramPayload),
+						body: JSON.stringify(waPayload),
 					},
 				);
 
-				const data = await telegramResponse.json();
+				const data = await waResponse.json();
 
-				if (!data.ok) {
-					console.error("Telegram API Error:", data);
+				if (data.error) {
+					console.error("WhatsApp API Error:", data.error);
 					return new Response(
 						JSON.stringify({
-							error: "Failed to send Telegram message",
+							error: "Failed to send WhatsApp message",
 							details: data,
 						}),
 						{
@@ -93,7 +68,7 @@ export default {
 				return new Response(
 					JSON.stringify({
 						success: true,
-						message: "Enquiry received and sent to Telegram",
+						message: "WhatsApp notification sent successfully",
 					}),
 					{
 						status: 200,
