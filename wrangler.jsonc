@@ -11,8 +11,4 @@
 		"binding": "ASSETS",
 	},
 	"compatibility_flags": ["nodejs_compat"],
-	"vars": {
-		"TELEGRAM_BOT_TOKEN": "placeholder_bot_token",
-		"TELEGRAM_CHAT_ID": "placeholder_chat_id",
-	},
 }
