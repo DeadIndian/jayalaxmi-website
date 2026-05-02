@@ -62,22 +62,17 @@ function openModal(eq) {
 
 	const pillsEl = document.getElementById("modalPills");
 	pillsEl.innerHTML = eq.pills
-		.map(
-			(p) =>
-				`<span class="eq-pill ${pillClass[p]}">${pillLabel[p]}</span>`,
-		)
+		.map((p) => `<span class="eq-pill ${pillClass[p]}">${pillLabel[p]}</span>`)
 		.join("");
 
 	const specsEl = document.getElementById("modalSpecs");
 	specsEl.innerHTML = eq.specs
-		.map(
-			([k, v]) => {
-				if (v === undefined || v === null) {
-					return `<div class="spec-header" style="font-weight: 700; color: var(--blue); padding: 8px 0 4px; margin-top: 10px; border-bottom: 2px solid var(--border); font-family: 'Oswald', sans-serif; letter-spacing: 0.5px;">${k}</div>`;
-				}
-				return `<div class="spec-row"><span class="spec-key">${k}</span><span class="spec-val">${v}</span></div>`;
+		.map(([k, v]) => {
+			if (v === undefined || v === null) {
+				return `<div class="spec-header" style="font-weight: 700; color: var(--blue); padding: 8px 0 4px; margin-top: 10px; border-bottom: 2px solid var(--border); font-family: 'Oswald', sans-serif; letter-spacing: 0.5px;">${k}</div>`;
 			}
-		)
+			return `<div class="spec-row"><span class="spec-key">${k}</span><span class="spec-val">${v}</span></div>`;
+		})
 		.join("");
 
 	const msg = encodeURIComponent(
@@ -157,7 +152,7 @@ function submitForm(e) {
 		email: email || "Not provided",
 		equipment: equip,
 		requirement: type,
-		details: msg || "None"
+		details: msg || "None",
 	};
 
 	// ─── SEND TO TELEGRAM BOT (SECURE BACKEND CALL) ───
@@ -165,32 +160,36 @@ function submitForm(e) {
 	fetch("/api/send-telegram", {
 		method: "POST",
 		headers: {
-			"Content-Type": "application/json"
+			"Content-Type": "application/json",
 		},
-		body: JSON.stringify(formData)
+		body: JSON.stringify(formData),
 	})
-	.then(response => {
-		if (response.ok) {
-			document.getElementById("form-success").style.display = "block";
-			document.getElementById("contactForm").reset();
-		} else {
-			alert("There was an error sending your enquiry. Please try again or contact us directly.");
-		}
-	})
-	.catch(error => {
-		console.error("Error sending enquiry:", error);
-		alert("There was an error sending your enquiry. Please check your internet connection.");
-	})
-	.finally(() => {
-		submitBtn.textContent = originalText;
-		submitBtn.disabled = false;
-	});
+		.then((response) => {
+			if (response.ok) {
+				document.getElementById("form-success").style.display = "block";
+				document.getElementById("contactForm").reset();
+			} else {
+				alert(
+					"There was an error sending your enquiry. Please try again or contact us directly.",
+				);
+			}
+		})
+		.catch((error) => {
+			console.error("Error sending enquiry:", error);
+			alert(
+				"There was an error sending your enquiry. Please check your internet connection.",
+			);
+		})
+		.finally(() => {
+			submitBtn.textContent = originalText;
+			submitBtn.disabled = false;
+		});
 }
 
 // Load data when DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
 	loadData();
-	if (typeof lucide !== 'undefined') {
+	if (typeof lucide !== "undefined") {
 		lucide.createIcons();
 	}
 });
