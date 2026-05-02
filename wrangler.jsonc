@@ -1,0 +1,14 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "jayalaxmi-website",
+	"compatibility_date": "2026-05-02",
+	"observability": {
+		"enabled": true,
+	},
+	"main": "worker.js",
+	"assets": {
+		"directory": ".",
+		"binding": "ASSETS",
+	},
+	"compatibility_flags": ["nodejs_compat"],
+}
