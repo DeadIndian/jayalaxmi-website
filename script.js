@@ -71,8 +71,12 @@ function openModal(eq) {
 	const specsEl = document.getElementById("modalSpecs");
 	specsEl.innerHTML = eq.specs
 		.map(
-			([k, v]) => `
-    <div class="spec-row"><span class="spec-key">${k}</span><span class="spec-val">${v}</span></div>`,
+			([k, v]) => {
+				if (v === undefined || v === null) {
+					return `<div class="spec-header" style="font-weight: 700; color: var(--blue); padding: 8px 0 4px; margin-top: 10px; border-bottom: 2px solid var(--border); font-family: 'Oswald', sans-serif; letter-spacing: 0.5px;">${k}</div>`;
+				}
+				return `<div class="spec-row"><span class="spec-key">${k}</span><span class="spec-val">${v}</span></div>`;
+			}
 		)
 		.join("");
 
