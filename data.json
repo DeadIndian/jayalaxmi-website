@@ -29,7 +29,7 @@
 				["Electric Motor Model", "Y2-100L-4"],
 				["Power", "1.8Kw"],
 				["Voltage", "380V"],
-				["Rotation speed", "1420n/Min"],
+				["Rotation speed", "1420 RPM"],
 				["Braking Torque", "15 N-m"],
 				["SAFETY LOCK"],
 				["Model", "LST30"],
@@ -49,7 +49,7 @@
 			"modalImage": "assets/images/equipment/material-hoist-detail.png",
 			"tag": "Hoist & Lift",
 			"name": "Material Hoist",
-			"short": "Heavy-duty vertical transport (ETB 1000 & ETB 1500) for materials on construction sites.",
+			"short": "Heavy-duty vertical transport (ETB 1000 & ETB 1500) for materials at construction sites.",
 			"subtitle": "High-Capacity Material Hoist (ETB 1000 / ETB 1500)",
 			"desc": "Our Material Hoists (ETB 1000 and ETB 1500) are robust, state-of-the-art machines ideal for high-rise construction up to 125 meters. Built for reliability and safety, they feature an inbuilt mechanical locking system, power fail-safe brake motor, and transport heavy materials vertically with ease.",
 			"specs": [
@@ -60,18 +60,17 @@
 				["Electric Motor", "10 HP / 12.5 HP"],
 				["Speed", "30-35 Mtr/Min"],
 				["Max Height", "125 Metres"],
-				["Mast Section", "500 mm x 400 mm x1.5 mtr"],
-				["Rectangle Bucket", "1250x800x610 mm / 1400x1000x500 mm"],
+				["Mast Section", "500 mm x 400 mm x 1.5 mtr"],
+				["Rectangle Bucket", "1250 x 800 x 610 mm / 1400 x 1000 x 500 mm"],
 				["FEATURES"],
 				["Design", "The state of art design"],
-				["Safety", "Built in reliability & safety"],
 				["Structure", "Sturdy & rugged structure"],
 				[
 					"Protection",
 					"Inbuilt mechanical locking system / free fall protection"
 				],
-				["Motor", "Power fail safe brake motor"],
-				["Limit Switch", "Top & bottom limit switch with break motor hoist"],
+				["VFD", "Power fail-safe brake VFD"],
+				["Limit Switch", "Top & bottom limit switch with brake motor hoist"],
 				["Bucket Safety", "Mechanical safety device for bucket"],
 				["Height", "Free standing height of 4.5 mtr above the roof height"],
 				["OPTIONAL"],
@@ -98,9 +97,9 @@
 			"specs": [
 				["Bar Diameter", "6 mm – 40 mm"],
 				["Bending Angle", "0° – 180°"],
-				["Motor Power", "2.2 kW – 5.5 kW"],
+				["Motor Power", "2.2 KW – 5.5 KW"],
 				["Speed", "5–14 RPM"],
-				["Power Supply", "415V, 3-phase"]
+				["Power Supply", "415 V, 3-phase"]
 			],
 			"pills": ["sale", "service & spares"]
 		},
@@ -116,9 +115,9 @@
 			"specs": [
 				["Bar Diameter", "Up to 40 mm"],
 				["Cutting Speed", "28 cuts/min"],
-				["Motor Power", "3 kW – 5.5 kW"],
+				["Motor Power", "3 KW – 5.5 KW"],
 				["Blade Type", "Hardened alloy steel"],
-				["Power Supply", "415V, 3-phase"]
+				["Power Supply", "415 V, 3-phase"]
 			],
 			"pills": ["sale", "service & spares"]
 		},
@@ -129,18 +128,18 @@
 			"modalImage": "assets/images/equipment/mini-crane-detail.jpg",
 			"tag": "Crane",
 			"name": "Mini Crane",
-			"short": "Compact crane for lifting materials on construction sites and tight spaces.",
+			"short": "Compact crane for lifting materials at construction sites and tight spaces.",
 			"subtitle": "Electric Mini Crane",
-			"desc": "Mini cranes offer an ideal solution for lifting tasks in restricted spaces. With their compact size and excellent lifting capabilities, they are perfect for indoor operations, roofing, and structural steel erection.",
+			"desc": "Mini cranes offer an ideal solution for lifting tasks in restricted spaces. With their compact size and excellent lifting capabilities, they are perfect for indoor operations, roofing and structural steel erection.",
 			"specs": [
 				["Lifting Capacity", "250 kg"],
-				["Power", "2HP single-phase motor"],
+				["Power", "2 HP single-phase motor"],
 				["Rope", "Steel wire rope"],
 				["Rope Thickness", "8mm"],
 				["Brake", "Electromagnetic"],
-				["Rope height", "30mts"],
+				["Rope height", "30 meters"],
 				["Rotation type", "360 degrees"],
-				["Accessories", "hook Chain tools"]
+				["Accessories", "Hook Chain tools"]
 			],
 			"pills": ["sale", "rent", "service & spares"]
 		},
@@ -151,8 +150,8 @@
 			"tag": "Hoist & Lift",
 			"name": "Passenger Hoist",
 			"short": "Safe and efficient vertical transportation for personnel and materials.",
-			"subtitle": "Construction Passenger Hoist",
-			"desc": "Designed for high-rise construction, our passenger hoists transport workers and materials quickly and safely to upper floors. They feature variable frequency drives for smooth starts and stops, and multiple safety mechanisms.",
+			"subtitle": "Passenger material Hoist",
+			"desc": "Designed for high-rise construction, our passenger hoists transport workers and materials quickly and safely to higher floors. They feature variable frequency drives for smooth starts and stops, and multiple safety mechanisms are in place.",
 			"specs": [
 				["Capacity", "1000 kg - 2000 kg"],
 				["Passengers", "10 - 20 persons"],
@@ -172,9 +171,9 @@
 			"desc": "Tower cranes are essential for high-rise building projects, offering exceptional lifting heights and capacities. We supply top-slewing tower cranes that are robust, reliable, and equipped with the latest safety control systems.",
 			"specs": [
 				["Max Load", "5,000 kg"],
-				["Jib Length", "55mtr"],
+				["Jib Length", "55 meters"],
 				["Tip Load", "1,000 kg"],
-				["Max Height", "Up to 40mtr"]
+				["Max Height", "100 meters"]
 			],
 			"pills": ["rent", "service & spares"]
 		},

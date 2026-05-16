@@ -269,7 +269,7 @@ nav {
 .hero-tagline {
 	font-size: clamp(15px, 2.5vw, 20px);
 	color: rgba(255, 255, 255, 0.9);
-	max-width: 600px;
+	max-width: 650px;
 	line-height: 1.6;
 	margin-bottom: 44px;
 	position: relative;
