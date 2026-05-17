@@ -93,7 +93,7 @@
 			"name": "Bar Bending Machine",
 			"short": "Electrically operated machine to bend TMT steel bars up to 40 mm.",
 			"subtitle": "Electric Bar Bending Machine",
-			"desc": "Bar bending machines are essential for any RCC structure. Our machines handle TMT bars from 6 mm to 40 mm with precision angle settings. They are built for heavy-duty continuous use on large construction sites and are available for both sale and rent.",
+			"desc": "Bar bending machines are essential for any RCC structure. Our machines handle TMT bars from 6 mm to 40 mm with precision angle settings. They are built for heavy-duty continuous use on large construction sites and are available for sale.",
 			"specs": [
 				["Bar Diameter", "6 mm – 40 mm"],
 				["Bending Angle", "0° – 180°"],
